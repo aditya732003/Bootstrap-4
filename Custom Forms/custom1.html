@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<title>Custom Forms</title>
+</head>
+<body>
+<div class="container mt-3">
+	<form>
+  <div class="custom-control custom-checkbox mb-3">
+      <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+      <label class="custom-control-label" for="customCheck">Custom checkbox</label>
+    </div>
+    <input type="checkbox" id="defaultCheck" name="example2">
+    <label for="defaultCheck">Default checkbox</label>
+     <div class="custom-control custom-switch">
+      <input type="checkbox" class="custom-control-input" id="switch1" name="example">
+      <label class="custom-control-label" for="switch1">Toggle me</label>
+    </div>
+    <div class="custom-control custom-radio">
+      <input type="radio" class="custom-control-input" id="customRadio" name="example1">
+      <label class="custom-control-label" for="customRadio">Custom radio</label>
+    </div>    
+    <input type="radio" id="defaultRadio" name="example2">
+    <label for="defaultRadio">Default radio</label>
+    <br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form><br>
+ <form action="#">
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadio1" name="example1">
+      <label class="custom-control-label" for="customRadio1">Custom radio</label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadio2" name="example2">
+      <label class="custom-control-label" for="customRadio2">Custom radio</label>
+    </div>
+    <select name="cars" class="custom-select my-3">
+      <option selected>Custom Select Menu</option>
+      <option value="volvo">Volvo</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+    <!-- Small -->
+  <select name="cars1" class="custom-select custom-select-sm my-3">
+    <option selected>Small Custom Select Menu</option>
+    <option value="volvo">Volvo</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+
+  <!-- Large -->
+  <select name="cars2" class="custom-select custom-select-lg my-3">
+    <option selected>Large Custom Select Menu</option>
+    <option value="volvo">Volvo</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+  <label for="customRange">Custom range</label>
+    <input type="range" class="custom-range" id="customRange" name="points1">
+    <label for="defaultRange">Default range</label>
+    <input type="range" id="defaultRange" name="points2"><br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+</body>
+</html>
