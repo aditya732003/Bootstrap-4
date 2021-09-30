@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <title>Grid System</title>
+</head>
+<body>
+<div class="container-fluid">
+  <h1>Basic Grid Structure</h1>
+  <p>Resize the browser window to see the effect.</p>
+  <p>The first, second and third row will automatically stack on top of each other when the screen is less than 576px wide.</p>
+  
+ 
+    <!-- Control the column width, and how they should appear on different devices -->
+    <div class="row">
+      <div class="col-sm-6" style="background-color:yellow;">50%</div>
+      <div class="col-sm-6" style="background-color:orange;">50%</div>
+    </div>
+    <br>
+    
+    <div class="row">
+      <div class="col-sm-4" style="background-color:yellow;">33.33%</div>
+      <div class="col-sm-4" style="background-color:orange;">33.33%</div>
+      <div class="col-sm-4" style="background-color:yellow;">33.33%</div>
+    </div>
+    <br>
+
+    <!-- Or let Bootstrap automatically handle the layout -->
+    <div class="row">
+      <div class="col-sm" style="background-color:yellow;">25%</div>
+      <div class="col-sm" style="background-color:orange;">25%</div>
+      <div class="col-sm" style="background-color:yellow;">25%</div>
+      <div class="col-sm" style="background-color:orange;">25%</div>
+    </div>
+    <br>
+    
+    <div class="row">
+      <div class="col" style="background-color:yellow;">25%</div>
+      <div class="col" style="background-color:orange;">25%</div>
+      <div class="col" style="background-color:yellow;">25%</div>
+      <div class="col" style="background-color:orange;">25%</div>
+    </div><br>
+    <p>This example demonstrates a 50%/50% split on small, medium, large and xlarge devices. On extra small devices, it will stack (100% width).</p>      
+    <p>Resize the browser window to see the effect.</p> 
+    <div class="row">
+      <div class="col-sm-6 bg-success">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </div>
+      <div class="col-sm-6 bg-warning">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.    
+      </div>
+    </div>
+  </div>
+</body>
+</html>
