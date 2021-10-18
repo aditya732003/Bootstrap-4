@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
+   <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
+ <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  <title>Spark</title>
+</head>
+<body>
+<div class="wrapper">
+<nav id="sidebar" class="sidebar">
+    <a href="#" class="sidebar-brand"><i class="fas fa-signature"></i> Spark</a>
+    <div class="sidebar-content">
+      <div class="sidebar-user">
+        <img src="images/sidebar/avatar.jpg" class="img-fluid rounded-circle mb-2">
+        <div class="font-weight-bold">Linda Miller</div>
+        <small>Front-end Developer</small>
+      </div>
+       <div class="sidebar-menu">
+          <ul>
+          <li class="header-menu">
+            <span>Main</span>
+          </li>
+          <li class="sidebar-dropdown dashboard">
+            <a href="#" data-toggle="collapse" data-target="#demo">
+              <i class="fas fa-home"></i>
+              <span>Dashboards</span>
+            </a>
+            <div class="sidebar-submenu">
+              <ul class="collapse" id="demo">
+                <li class="active">
+                  <a href="#">Default</a>
+                </li>
+                <li>
+                  <a href="#">Analytics</a>
+                </li>
+                <li>
+                  <a href="#">E-commerce</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="sidebar-dropdown">
+            <a href="#" data-toggle="collapse" data-target="#demo1">
+              <i class="fas fa-file"></i>
+              <span>Pages</span>
+             </a>
+            <div class="sidebar-submenu">
+              <ul class="collapse" id="demo1">
+                <li>
+                  <a href="#">Settings</a>
+                </li>
+                <li>
+                  <a href="#">Clients
+                   <span class="badge badge-pill badge-primary">New</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Invoice</a>
+                </li>
+                 <li>
+                  <a href="#">Pricing</a>
+                </li>
+                <li>
+                  <a href="#">Tasks</a>
+                </li>
+                <li>
+                  <a href="#">Chat
+                    <span class="badge badge-pill badge-primary">New</span>
+                  </a>
+                </li>
+                 <li>
+                  <a href="#">Blank Page</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="sidebar-dropdown">
+             <a href="#" data-toggle="collapse" data-target="#demo2">
+              <i class="fas fa-sign-in-alt"></i>
+              <span>Auth</span>
+            </a>
+            <div class="sidebar-submenu">
+              <ul class="collapse" id="demo2">
+                <li>
+                  <a href="#">Sign In</a>
+                </li>
+                <li>
+                  <a href="#">Sign Up</a>
+                </li>
+                <li>
+                  <a href="#">Reset Password</a>
+                </li>
+                <li>
+                  <a href="#">404 Page</a>
+                </li>
+                <li>
+                  <a href="#">500 Page</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header-menu">
+            <span>Elements</span>
+          </li>
+          <li class="sidebar-dropdown">
+           <a href="#" data-toggle="collapse" data-target="#demo3">
+              <i class="fas fa-flask"></i>
+              <span>User Interface</span>
+            </a>
+           <div class="sidebar-submenu">
+              <ul class="collapse" id="demo3">
+                <li>
+                  <a href="#">Alerts</a>
+                </li>
+                <li>
+                  <a href="#">Buttons</a>
+                </li>
+                <li>
+                  <a href="#">Cards</a>
+                </li>
+                <li>
+                  <a href="#">General</a>
+                </li>
+                 <li>
+                  <a href="#">Grid</a>
+                </li>
+                <li>
+                  <a href="#">Modals</a>
+                </li>
+                <li>
+                  <a href="#">Offcanvas</a>
+                </li>
+                <li>
+                  <a href="#">Placeholders</a>
+                </li>
+                 <li>
+                  <a href="#">Notifications</a>
+                </li>
+                <li>
+                  <a href="#">Tabs</a>
+                </li>
+                <li>
+                  <a href="#">Typography</a>
+                </li>
+                </ul>
+            </div>
+          </li>
+          <li class="sidebar-dropdown charts">
+            <a href="#" data-toggle="collapse" data-target="#demo4">
+              <i class="fas fa-chart-pie"></i>
+              <span>Charts</span>
+              <span class="badge badge-pill badge-primary">New</span>
+            </a>
+             <div class="sidebar-submenu">
+              <ul class="collapse" id="demo4">
+                <li>
+                  <a href="#">Chart.js</a>
+                </li>
+                <li>
+                  <a href="#">ApexCharts</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          
+          <li class="sidebar-dropdown">
+            <a href="#" data-toggle="collapse" data-target="#demo5">
+              <i class="fas fa-check-square"></i>
+              <span>Forms</span>
+            </a>
+            <div class="sidebar-submenu">
+              <ul class="collapse" id="demo5">
+                <li>
+                  <a href="#">Layouts</a>
+                </li>
+                <li>
+                  <a href="#">Basic Elements</a>
+                </li>
+                 <li>
+                  <a href="#">Advanced Elements</a>
+                </li>
+                <li>
+                  <a href="#">Floating Labels</a>
+                </li>
+                 <li>
+                  <a href="#">Input Groups</a>
+                </li>
+                <li>
+                  <a href="#">Editors</a>
+                </li>
+                 <li>
+                  <a href="#">Validation</a>
+                </li>
+                <li>
+                  <a href="#">Wizard</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-list"></i>
+              <span>Tables</span>
+            </a>
+          </li>
+           <li class="sidebar-dropdown">
+              <a href="#" data-toggle="collapse" data-target="#demo6">
+              <i class="fas fa-table"></i>
+              <span>DataTables</span>
+            </a>
+           <div class="sidebar-submenu">
+              <ul class="collapse" id="demo6">
+                <li>
+                  <a href="#">Responsive Table</a>
+                </li>
+                <li>
+                  <a href="#">Table with Buttons</a>
+                </li>
+                 <li>
+                  <a href="#">Column Search</a>
+                </li>
+                <li>
+                  <a href="#">Fixed Header</a>
+                </li>
+                 <li>
+                  <a href="#">Multi Selection</a>
+                </li>
+                <li>
+                  <a href="#">Ajax Sourced Data</a>
+                </li>
+                </ul>
+            </div>
+          </li>
+           <li class="sidebar-dropdown">
+            <a href="#" data-toggle="collapse" data-target="#demo7">
+              <i class="fas fa-heart"></i>
+              <span>Icons</span>
+            </a>
+            <div class="sidebar-submenu">
+              <ul class="collapse" id="demo7">
+                <li>
+                  <a href="#">Feather</a>
+                </li>
+                <li>
+                  <a href="#">Ion Icons</a>
+                </li>
+                 <li>
+                  <a href="#">Font Awesome</a>
+                </li>
+               </ul>
+            </div>
+          </li>
+           <li>
+            <a href="#">
+              <i class="far fa-calendar-alt"></i>
+              <span>Calendar Chart</span>
+            </a>
+          </li>
+          <li class="sidebar-dropdown">
+          <a href="#" data-toggle="collapse" data-target="#demo8">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Maps</span>
+            </a>
+              <div class="sidebar-submenu">
+              <ul class="collapse" id="demo8">
+                <li>
+                  <a href="#">Google Maps</a>
+                </li>
+                <li>
+                  <a href="#">Vector Maps</a>
+                </li>
+               </ul>
+            </div>
+          </li>
+           <li class="header-menu">
+            <span>Extras</span>
+          </li>
+           <li class="sidebar-dropdown">
+            <a href="#" data-toggle="collapse" data-target="#demo9">
+              <i class="fas fa-book"></i>
+              <span>Documentation</span>
+            </a>
+            <div class="sidebar-submenu">
+              <ul class="collapse" id="demo9">
+                <li>
+                  <a href="#">Getting Started</a>
+                </li>
+                <li>
+                  <a href="#">Plugins</a>
+                </li>
+                <li>
+                  <a href="#">Changelog</a>
+                </li>
+               </ul>
+            </div>
+          </li>
+           <li class="sidebar-dropdown">
+             <a href="#" data-toggle="collapse" data-target="#demo10">
+              <i class="fas fa-desktop"></i>
+              <span>Layouts</span>
+            </a>
+           <div class="sidebar-submenu">
+              <ul class="collapse" id="demo10">
+                <li>
+                  <a href="#">Left Sidebar</a>
+                </li>
+                <li>
+                  <a href="#">Right Sidebar</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+   </nav>
+	<div class="main">
+		<nav class="navbar navbar-expand">
+			<a href="#" class="sidebar-toggle mr-2">
+				<i class="fas fa-bars"></i>
+			</a>
+			<form class="d-none d-sm-block">
+            <input type="text" class="form-control" placeholder="Search projects...">
+            </form>
+    <div class="collapse navbar-collapse">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+      <a class="nav-link active" href="#" id="navbardrop" data-toggle="dropdown">
+        <i class="fas fa-envelope-open"></i>
+      </a>
+      <div class="dropdown-menu">
+      	<div class="dropdown-header top">4 New Messages</div>
+      	<a class="dropdown-item" href="#">
+        	<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action">
+  	<div class="media">
+  <img src="images/navbar/avatar-5.jpg" alt="John Doe" class="mr-3 rounded-circle">
+  <div class="media-body">
+    <div class="text-dark">Michelle Bilodeau</div>
+    <div class="text-muted small mt-1">Nam pretium turpis et arcu. Duis arcu tortor.</div>
+   <div class="text-muted small mt-1">5m ago</div>
+  </div>
+</div>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">
+  	<div class="media">
+  <img src="images/navbar/avatar-4.jpg" alt="John Doe" class="mr-3 rounded-circle">
+  <div class="media-body">
+    <div class="text-dark">Kathie Burton</div>
+    <div class="text-muted small mt-1">Pellentesque auctor neque nec urna.</div>
+    <div class="text-muted small mt-1">30m ago</div>
+  </div>
+</div>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">
+  	<div class="media">
+  <img src="images/navbar/avatar-3.jpg" alt="John Doe" class="mr-3 rounded-circle">
+  <div class="media-body">
+    <div class="text-dark">Alexander Groves</div>
+    <div class="text-muted small mt-1">Curabitur ligula sapien euismod vitae.</div>
+   <div class="text-muted small mt-1">2h ago</div>
+  </div>
+</div>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">
+  	<div class="media">
+  <img src="images/navbar/avatar-2.jpg" alt="John Doe" class="mr-3 rounded-circle">
+  <div class="media-body">
+   <div class="text-dark">Daisy Seger</div>
+   <div class="text-muted small mt-1">Aenean tellus metus, bibendum sed, posuere ac, mattis non.</div>
+  <div class="text-muted small mt-1">5h ago</div>
+  </div>
+</div>
+  </a>
+</div>
+        </a>
+      <div class="dropdown-header bottom">Show all messages</div>
+      </div>
+    </li>
+       <li class="nav-item dropdown">
+      <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">
+        <i class="fas fa-bell"></i>
+        <span class="indicator"></span>
+      </a>
+      <div class="dropdown-menu">
+        <div class="dropdown-header top">4 New Messages</div>
+         <a class="dropdown-item" href="#">
+        	<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action">
+  	<div class="media">
+ <i class="fas fa-bell text-danger align-self-center"></i>
+  <div class="media-body ml-4">
+   <div class="text-dark">Update completed</div>
+   <div class="text-muted small mt-1">Restart server 12 to complete the update.</div>
+   <div class="text-muted small mt-1">2h ago</div>
+  </div>
+</div>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">
+  	<div class="media">
+  <i class="fas fa-envelope-open text-warning align-self-center"></i>
+  <div class="media-body ml-4">
+   <div class="text-dark">Lorem ipsum</div>
+   <div class="text-muted small mt-1">Aliquam ex eros, imperdiet vulputate hendrerit et.</div>
+    <div class="text-muted small mt-1">6h ago</div>
+  </div>
+</div>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">
+  	<div class="media">
+  <i class="fas fa-building text-primary align-self-center"></i>
+  <div class="media-body ml-4">
+   <div class="text-dark">Login from 192.186.1.1</div>
+   <div class="text-muted small mt-1">8h ago</div>
+  </div>
+</div>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">
+  	<div class="media">
+  <i class="fas fa-bell-slash text-success align-self-center"></i>
+  <div class="media-body ml-4">
+   <div class="text-dark">New connection</div>
+   <div class="text-muted small mt-1">Anna accepted your request.</div>
+   <div class="text-muted small mt-1">12h ago</div>
+  </div>
+</div>
+  </a>
+</div>
+        </a>
+      <div class="dropdown-header bottom">Show all notifications</div>
+      </div>
+    </li>
+      <li class="nav-item dropdown cog">
+      <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">
+        <i class="fas fa-cog"></i>
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#"><i class="fas fa-fw mr-1 fa-user"></i> View Profile</a>
+        <a class="dropdown-item" href="#"><i class="fas fa-fw mr-1 fa-comments"></i> Contacts</a>
+        <a class="dropdown-item" href="#"><i class="fas fa-fw mr-1 fa-chart-pie"></i> Analytics</a>
+        <a class="dropdown-item" href="#"><i class="fa-fw mr-1 fas fa-cogs"></i> Settings</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#"><i class="fa-fw mr-1 fas fa-arrow-alt-circle-right"></i> Settings</a>
+      </div>
+    </li>
+    </ul>
+  </div>
+		</nav>
+		<main class="content">
+			<div class="container-fluid">
+				<div class="header">
+					<h1 class="header-title">Welcome back, Linda!</h1>
+					<p class="header-subtitle">You have 24 new messages and 5 new notifications.</p>
+				</div>
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="mb-4">Recent Movement</h5>
+                <canvas id="myChart" width="857" height="300"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <div class="w-100">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <h5 class="card-title">Sales Today</h5>
+                        </div>
+                        <div class="col-auto">
+                          <div class="icon">
+                            <i class="fas fa-truck"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <h2 class="mt-1 mb-3">2.562</h2>
+                      <div class="text mb-0">
+                          <span class="text-danger">-2.65%</span>
+                          Less sales than usual
+                      </div>
+                    </div>
+                  </div>
+                   <div class="card">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <h5 class="card-title">Visitors Today</h5>
+                        </div>
+                        <div class="col-auto">
+                          <div class="icon">
+                            <i class="fas fa-users"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <h2 class="mt-1 mb-3">17.212</h2>
+                      <div class="text mb-0">
+                          <span class="text-success">5.50%</span>
+                          More visitors than usual
+                        </div>
+                    </div>
+                  </div>
+              </div>
+          <div class="col-sm-6">
+               <div class="card">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col">
+                          <h5 class="card-title">Total Earnings</h5>
+                        </div>
+                        <div class="col-auto">
+                          <div class="icon">
+                            <i class="fas fa-dollar-sign"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <h2 class="mt-1 mb-3">$24.300</h2>
+                      <div class="text mb-0">
+                          <span class="text-success">8.35%</span>
+                         More earnings than usual
+                        </div>
+                    </div>
+                  </div>
+                   <div class="card">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col mt-0">
+                          <h5 class="card-title">Pending Orders</h5>
+                        </div>
+                        <div class="col-auto">
+                          <div class="icon">
+                            <i class="fas fa-shopping-cart"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <h2 class="mt-1 mb-3">43</h2>
+                      <div class="text mb-0">
+                          <span class="text-danger">-4.25%</span>
+                          Less orders than usual
+                        </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+          <div class="row">
+            <div class="col-xl-3 col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5>Calendar</h5>
+                  <div class="align-self-center w-100">
+                     <div id='datepicker-inline'></div>
+                  </div>
+                  </div>
+              </div>
+            </div>
+             <div class="col-xl-3 col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="mb-4">Browser Usage</h5>
+                  <canvas id="myChart1" width="397px" height="200"></canvas>
+                  <table class="table mt-3">
+                <tbody>
+                <tr>
+                 <td class="border-0"><i class="fas fa-circle text-primary fa-fw"></i> Chrome</td>
+                  <td class="text-right border-0">4401</td>
+                 </tr>
+                <tr>
+                  <td><i class="fas fa-circle text-warning fa-fw"></i> Firefox</td>
+                  <td class="text-right">4003</td>
+                </tr>
+                <tr>
+                 <td><i class="fas fa-circle text-danger fa-fw"></i> IE</td>
+                  <td class="text-right">1589</td>
+                 </tr>
+              </tbody>
+            </table>
+                </div>
+              </div>
+            </div>
+             <div class="col-xl-6 col-md-12">
+              <div class="card chart">
+                <div class="card-body">
+                  <h4>Current Visitors</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-9 col-lg-8">
+              <div class="card tabular">
+   <div class="card-body">
+       <h5>Latest Projects</h5>
+    <table class="table table-striped" id="example">
+     <thead>
+      <tr>
+        <th>Name</th>
+        <th>Status</th>
+        <th>Assignee</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Project Apollo</td>
+        <td><span class="badge badge-success">Done</span></td>
+        <td>Carl Jenkins</td>
+      </tr>
+      <tr>
+        <td>Project Fireball</td>
+        <td><span class="badge badge-danger">Cancelled</span></td>
+        <td>Bertha Martin</td>
+      </tr>
+      <tr>
+        <td>Project Hades</td>
+        <td><span class="badge badge-success">Done</span></td>
+        <td>Stacie Hall</td>
+      </tr>
+       <tr>
+        <td>Project Nitro</td>
+        <td><span class="badge badge-warning">In progress</span></td>
+        <td>Carl Jenkins</td>
+      </tr>
+      <tr>
+        <td>Project Phoenix</td>
+        <td><span class="badge badge-success">Done</span></td>
+        <td>Bertha Martin</td>
+      </tr>
+      <tr>
+        <td>Project Romeo</td>
+        <td><span class="badge badge-success">Done</span></td>
+        <td>Ashley Briggs</td>
+      </tr>
+        <tr>
+        <td>Project Wombat</td>
+        <td><span class="badge badge-warning">In progress</span></td>
+        <td>Bertha Martin</td>
+      </tr>
+      <tr>
+        <td>Project X</td>
+        <td><span class="badge badge-success">Done</span></td>
+        <td>Stacie Hall</td>
+      </tr>
+      <tr>
+        <td>Project Zircon</td>
+        <td><span class="badge badge-danger">Cancelled</span></td>
+        <td>Stacie Hall</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+                </div>
+              </div>
+                <div class="col-xl-3 col-lg-4">
+                  <div class="card">
+                    <div class="card-body">
+                     <h5 class="mb-4">Monthly Sales</h5>
+                     <canvas id="myChart2" width="857" height="350"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+         </main>
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row text-muted align-items-center">
+          <div class="col-8">
+            <ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link" href="#">Support</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Privacy</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Terms of Service</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Contact</a>
+  </li>
+</ul>
+          </div>
+          <div class="col-4 text-right"> 
+            <p class="mb-0">
+                © 2021 - <a href="#" class="text-muted">Spark</a>
+              </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    </div>
+</div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+   <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+   <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+   <script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
