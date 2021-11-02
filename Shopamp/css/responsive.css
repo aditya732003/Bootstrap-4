@@ -1,0 +1,110 @@
+@media screen and (min-width: 992px) {
+	body{
+		overflow-x: hidden;
+       }
+	.navbar-light .navbar-nav .dropdown-menu{
+         width: 300px;
+    }
+.contacts iframe{
+         	height: 500px;
+        }
+}
+@media screen and (max-width: 991px) {
+	.sidebar .sidebar-links .navbar-nav .nav-item.primary{
+		text-align: center;
+	}
+	.aboutus .card{
+    	padding-bottom: 2rem;
+     }
+     .feature .text {
+      padding-bottom: 5rem;
+      }
+      .item .first-wrapper {
+        margin-bottom: 10px;
+      }
+      .item .first-wrapper .image .content {
+       bottom: 0.5rem;
+       right: 1.5rem;
+       }
+       .item .second-wrapper .image img{
+         height: 300px;
+         margin-bottom: 10px;
+         }
+      .item .second-wrapper .image .content {
+           top: 0.5rem;
+       }
+       .news .card{
+       	padding-bottom: 2rem;
+       }
+       .news .title h3{
+       	font-size: 2rem;
+       }
+         .contacts .top-line .wrapper-item {
+             padding: 1rem 5rem 0;
+          }
+       .contacts .top-line .wrapper-item .text{
+         border-bottom: 1px solid #dfdfe9;
+         padding: 2rem 0;
+        }
+        .contacts .top-line .wrapper-item:last-child .text {
+         border-bottom: none;
+         }
+         .footer .column1 {
+           padding: 20px 0;
+          text-align: center;
+          }
+        }
+@media screen and (max-width: 767px) {
+	.sale .title h2{
+		font-size: 40px;
+	}
+	.features .title h3{
+		font-size: 2.25rem;
+	}
+	.collection .title h2, .products h2, 
+	.testimonials .title h2, .contacts .title h2, .aboutus .title h2{
+		font-size: 2.6rem;
+	}
+	.subscribe h2{
+		font-size: 35px;
+	}
+	.subscribe .title-wrap{
+		text-align: center;
+	}
+	.subscribe .btn-light{
+		margin-left: 0;
+		margin-top: 10px;
+		text-align: left;
+		width: 100%;
+	}
+	.item .first-wrapper .image img {
+    height: 300px;
+    }
+  .item .second-wrapper .image img{
+    height: 200px;
+   }
+	.collection .title{
+		text-align: center;
+	}
+	.testimonials .carousel .carousel-control-prev,
+	.testimonials .carousel .carousel-control-next{
+		display: none;
+	}
+	.contacts .top-line .wrapper-item .text{
+		text-align: center;
+	}
+	.contacts .map{
+		padding: 0 2rem;
+	}
+	.footer .column1 .logo {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 0;
+ }
+ .footer .column1 h5{
+ 	text-align: center;
+ }
+ .footer .column1 .links p{
+     text-align: center;
+ }
+}
