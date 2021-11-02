@@ -558,7 +558,6 @@ box-shadow: none;
     line-height: 40px;
     font-size: 1.1875rem;
 }
-
 .testimonials .carousel .carousel-control-prev{
     width: 30px;
     height: 30px;
@@ -614,37 +613,34 @@ box-shadow: none;
     padding-bottom: 5rem;
     background-color: #f1f1f7;
 }
-.footer .column1 .logo {
+.footer .column .logo {
     text-align: left;
     margin-bottom: 0;
     margin-left: -17px;
 }
-.footer .column1 .logo img{
+.footer .column .logo img{
     width: 100px;
     }
-.footer .column1 p{
+.footer .column p{
     color: #999999;
     line-height: 1.4;
     font-weight: 300;
 }
-.footer .social a{
+.footer .social li a{
     display: inline-flex;
-    justify-content: center;
-    align-items: center;
     padding: 8px;
     margin-right: 1rem;
     background-color: #ffffff;
     border-radius: 50%;
-    text-decoration: none;
 }
-.footer .column1 h5 {
+.footer .column h5 {
     padding-bottom: 1.875rem;
     font-size: 1rem;
     line-height: 1.4;
     font-weight: 600;
     text-align: left;
 }
-.footer .column1 .links p{
+.footer .column .links p{
     color: #999999;
     line-height: 1.4;
     text-align: left;

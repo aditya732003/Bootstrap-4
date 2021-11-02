@@ -49,9 +49,12 @@
         .contacts .top-line .wrapper-item:last-child .text {
          border-bottom: none;
          }
-         .footer .column1 {
+         .footer .column {
            padding: 20px 0;
           text-align: center;
+          }
+          .footer .social{
+          	justify-content: center;
           }
         }
 @media screen and (max-width: 767px) {
@@ -96,15 +99,15 @@
 	.contacts .map{
 		padding: 0 2rem;
 	}
-	.footer .column1 .logo {
+	.footer .column .logo {
     text-align: center;
     margin-bottom: 10px;
     margin-left: 0;
  }
- .footer .column1 h5{
+ .footer .column h5{
  	text-align: center;
  }
- .footer .column1 .links p{
+ .footer .column .links p{
      text-align: center;
  }
 }
