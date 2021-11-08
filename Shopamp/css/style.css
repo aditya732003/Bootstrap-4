@@ -45,7 +45,9 @@ body{
 .sidebar .close-sidebar span:nth-child(2) {
    transform: rotate(-45deg);
 }
-.sidebar .dropdown:hover .sidebar .dropdown-menu {display: block;}
+.sidebar .navbar-nav li:hover .dropdown-menu {
+    display: block;
+}
 .navbar-light {
     z-index: 100;
     width: 100%;
@@ -71,6 +73,11 @@ body{
     padding: 0;
     text-align: center;
 }
+.sidebar .sidebar-links .navbar-nav .nav-item .nav-link:hover,
+.sidebar .sidebar-links .navbar-nav .dropdown-menu .dropdown-item:hover{
+    background-color: transparent;
+    color: #999999;
+    }
 .navbar-light .btn-primary, .sidebar .sidebar-links .btn-primary{
 	text-transform: capitalize;
 	padding: 14px 30px;
@@ -78,6 +85,16 @@ body{
 	background-color: #1b85ea;
     border-color: #1b85ea;
     margin-top: -15px;
+    font-weight: 600;
+}
+.sidebar .sidebar-links .btn-primary{
+    text-transform: capitalize;
+    padding: 14px 30px;
+    border-radius: 100px;
+    background-color: #1b85ea;
+    border-color: #1b85ea;
+    margin-top: -25px;
+    font-weight: 600;
 }
 .navbar-light .navbar-nav .dropdown-menu, 
 .sidebar .sidebar-links .navbar-nav .dropdown-menu{
@@ -85,6 +102,7 @@ body{
 	border: 0;
 	padding: 1.25rem 0;
 	border-radius: 0;
+    transition: all 0.5s ease;
 	box-shadow: 0px 3px 21.88px 0.12px rgb(0 0 0 / 10%);
 }
 .navbar-light .navbar-nav .dropdown-menu .dropdown-item, 
@@ -154,7 +172,7 @@ box-shadow: none;
 	color: #1b85ea;
 	font-size: 3.25rem;
 	letter-spacing: 1px;
-	font-weight: 600;
+	font-weight: 500;
 }
 .aboutus .card{
 	border: 0;
@@ -323,6 +341,9 @@ box-shadow: none;
     border-bottom: none;
     padding: .5rem 1rem;
 }
+.products .modal .modal-header .close:focus{
+   outline: none;
+    }
 .products .modal .modal-body h4{
     color: #1b85ea;
     font-size: 1.1875rem;
@@ -462,12 +483,12 @@ box-shadow: none;
 .news .title{
     padding-bottom: 4.375rem;
 }
-.news .title h3{
+.news .title h2{
     color: #1b85ea;
     font-size: 3.25rem;
     line-height: 1.2;
     letter-spacing: 1px;
-    font-weight: 600;
+    font-weight: 500;
 }
 .news .card{
     background-color: transparent;

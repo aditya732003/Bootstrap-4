@@ -12,6 +12,7 @@
 @media screen and (max-width: 991px) {
 	.sidebar .sidebar-links .navbar-nav .nav-item.primary{
 		text-align: center;
+		z-index: 10;
 	}
 	.aboutus .card{
     	padding-bottom: 2rem;
@@ -36,10 +37,7 @@
        .news .card{
        	padding-bottom: 2rem;
        }
-       .news .title h3{
-       	font-size: 2rem;
-       }
-         .contacts .top-line .wrapper-item {
+       .contacts .top-line .wrapper-item {
              padding: 1rem 5rem 0;
           }
        .contacts .top-line .wrapper-item .text{
@@ -64,7 +62,7 @@
 	.features .title h3{
 		font-size: 2.25rem;
 	}
-	.collection .title h2, .products h2, 
+	.collection .title h2, .products h2, .news .title h2,
 	.testimonials .title h2, .contacts .title h2, .aboutus .title h2{
 		font-size: 2.6rem;
 	}
