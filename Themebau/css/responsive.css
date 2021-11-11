@@ -1,0 +1,103 @@
+@media screen and (min-width: 992px) {
+	.navbar-dark .navbar-nav .nav-item .ball{
+		display: none;
+	}
+	.navbar-dark .navbar-nav .nav-item .nav-link {
+      padding-top: 24px;
+     }
+     .navbar-dark {
+      padding: 0 45px;
+      }
+      .navbar-dark .navbar-nav .nav-item .btn-light {
+        margin-left: 40px;
+        margin-right: 190px;
+        margin-top: -20px;
+         }
+         .unique .second{
+         	margin-top: -70px;
+         	margin-right: -100px;
+         }
+         .unique h2{
+         	margin-left: -100px;
+         }
+        .responsive .pb-lg-160{
+          padding-bottom: 160px;
+         }
+       }
+@media screen and (max-width: 991px) {
+	 .navbar-dark {
+      padding: 0 120px;
+      }
+      #nav-icon{
+      	right: 3px;
+      }
+	.navbar-dark .navbar-nav{
+		margin-left: -20px;
+    margin-top: 50px;
+    }
+  .navbar-dark .navbar-collapse{
+  	height: 100vh;
+  }
+	.navbar-dark .navbar-nav .nav-item .ball{
+		display: block;
+	}
+	.navbar-dark .navbar-nav .nav-item .clean{
+		display: none;
+	}
+	.navbar-dark .navbar-footer {
+        margin-top: 57px;
+    }
+    .navbar-dark .navbar-nav .nav-item .nav-link {
+      font-size: 70px;
+      padding: 0px 20px;
+     }
+}
+@media screen and (max-width: 768px) {
+	.navbar-dark .navbar-nav .nav-item .nav-link {
+      font-size: 34px;
+      padding: 3px 20px;
+     }
+     .navbar-dark .navbar-nav .nav-item .btn-light{
+     	margin-top: -40px;
+     }
+     .content h1{
+      font-size: 5rem;
+      }
+      .navbar-dark {
+       padding: 0 30px;
+       }
+      }
+@media screen and (max-width: 767px) {
+	 .navbar-dark {
+    padding: 0 15px;
+   }
+	.navbar-dark .navbar-nav .nav-item .clean{
+		display: none;
+	}
+	.navbar-dark .navbar-nav .nav-item .ball{
+		display: block;
+	}
+	.navbar-dark .navbar-nav .nav-item .btn-light {
+    color: #fff;
+    background-color: transparent;
+    padding: 0 0;
+    margin-right: 10px;
+    margin-top: -43px;
+}
+.content h1 {
+    font-size: 3.4375em;
+}
+#projects-carousel.owl-carousel .owl-dots .owl-dot span{
+	width: 50px;
+}
+.features .row.gv-3, .pages .gh-1, .unique .gh-1, .animations .gh-1 {
+    margin-left: 0px;
+}
+.footer .interactive-links .nav-link{
+  font-size: 3.4375em;
+}
+.footer{
+  text-align: center;
+}
+	}
+	
