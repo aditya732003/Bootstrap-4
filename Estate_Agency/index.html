@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" type="text/css" href="css/responsive.css">
+ <!--   https://bootstrapmade.com/demo/EstateAgency/ -->
+	<title>Estate Agency</title>
+</head>
+<body>
+	<div class="click-closed"></div>
+   <div class="box-collapse">
+   	<div class="title-box">
+   		<h3 class="title">Search Property</h3>
+   		<span class="close-box fa-solid fa-xmark"></span>
+   	</div>
+   		<div class="box-collapse-wrap">
+      <form>
+  <div class="row">
+  	 <div class="col-md-12 mb-2">
+     <div class="form-group">
+    <label for="keyword">Keyword</label>
+    <input type="text" class="form-control form-control-lg" placeholder="Keyword" id="keyword">
+  </div>
+    </div>
+    <div class="col-md-6 mb-2">
+      <div class="form-group wrapper mt-3">
+    <label for="type">Type</label>
+    <select class="form-control" id="sel1">
+    <option>All Type</option>
+    <option>For Rent</option>
+    <option>For Sale</option>
+    <option>Open House</option>
+  </select>
+  </div>
+    </div>
+    <div class="col-md-6 mb-2">
+      <div class="form-group wrapper mt-3">
+    <label for="city">City</label>
+    <select class="form-control" id="sel2">
+    <option>All City</option>
+    <option>Alabama</option>
+    <option>Arizona</option>
+    <option>California</option>
+    <option>Colorado</option>
+  </select>
+  </div>
+    </div>
+     <div class="col-md-6 mb-2">
+      <div class="form-group wrapper mt-3">
+    <label for="bedrooms">Bedrooms</label>
+    <select class="form-control" id="sel3">
+    <option>Any</option>
+    <option>01</option>
+    <option>02</option>
+    <option>03</option>
+  </select>
+  </div>
+    </div>
+     <div class="col-md-6 mb-2">
+      <div class="form-group wrapper mt-3">
+    <label for="city">Garages</label>
+    <select class="form-control" id="sel4">
+    <option>Any</option>
+    <option>01</option>
+    <option>02</option>
+    <option>03</option>
+    <option>04</option>
+  </select>
+  </div>
+    </div>
+     <div class="col-md-6 mb-2">
+      <div class="form-group wrapper mt-3">
+    <label for="city">Bathrooms</label>
+    <select class="form-control" id="sel5">
+    <option>Any</option>
+    <option>01</option>
+    <option>02</option>
+    <option>03</option>
+    <option>04</option>
+  </select>
+  </div>
+    </div>
+     <div class="col-md-6 mb-2">
+      <div class="form-group wrapper mt-3">
+    <label for="city">Min Price</label>
+    <select class="form-control" id="sel6">
+    <option>Unlimited</option>
+    <option>$50,000</option>
+    <option>$100,000</option>
+    <option>$150,000</option>
+    <option>$200,000</option>
+  </select>
+  </div>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-success">Search Property</button>
+</form>
+   		</div>
+   	</div>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+			<div class="container">
+ <!-- Toggler/collapsibe Button -->
+ <button class="navbar-toggler" id="nav-icon" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">        
+          <span></span>
+          <span></span>
+          <span></span>
+ </button>
+   <!-- Brand -->
+<a class="navbar-brand" href="#">Estate<span class="color-green">Agency</span></a>
+ <ul class="navbar-nav magnifying">
+      <li class="nav-item">
+         <a class="nav-link glass" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+      </li>
+ </ul>
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">about</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">property</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#">blog</a>
+      </li>
+     <li class="nav-item dropdown">
+		   <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  pages </a>
+		    <ul class="dropdown-menu">
+			  <li><a class="dropdown-item" href="#">property single</a></li>
+			  <li><a class="dropdown-item" href="#">blog single</a></li>
+			  <li><a class="dropdown-item" href="#">agents grid</a></li>
+			  <li><a class="dropdown-item" href="#">agent single</a></li>
+		    </ul>
+		</li>
+     <li class="nav-item">
+        <a class="nav-link" href="#">contact</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link glass link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+ <section class="slider">
+    <div class="container-fluid p-0">
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="slider-carousel" class="owl-carousel">
+
+            <!--TESTIMONIAL 1 -->
+            <div class="item">
+             <div class="card">
+  <img class="card-img-top" src="images/slider/slide-1.jpg" alt="Card image">
+  <div class="card-img-overlay">
+     <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+      <div class="intro">
+       <p class="title-top">Doral, Florida<br> 78345</p>
+       <h1 class="title mb-4"><span class="color-green">204 </span> Mount<br> Olive Road Two</h1>
+        <a href="#" class="btn btn-light">rent | $ 12.000</a>
+      </div>
+      </div>
+    </div>
+  </div>
+      </div>
+            </div>
+          </div>
+            <!--END OF TESTIMONIAL 1 -->
+            <!--TESTIMONIAL 2 -->
+            <div class="item">
+             <div class="card">
+  <img class="card-img-top" src="images/slider/slide-2.jpg" alt="Card image">
+  <div class="card-img-overlay">
+      <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+      <div class="intro">
+       <p class="title-top">Doral, Florida<br> 78345</p>
+       <h1 class="title mb-4"><span class="color-green">204 </span> rino<br> venda road five</h1>
+        <a href="#" class="btn btn-light">rent | $ 12.000</a>
+      </div>
+      </div>
+    </div>
+  </div>
+      </div>
+          </div>
+            </div>
+            <!--END OF TESTIMONIAL 2 -->
+            <!--TESTIMONIAL 3 -->
+           <div class="item">
+            <div class="card">
+  <img class="card-img-top" src="images/slider/slide-3.jpg" alt="Card image">
+  <div class="card-img-overlay">
+     <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+      <div class="intro">
+       <p class="title-top">Doral, Florida<br> 78345</p>
+       <h1 class="title mb-4"><span class="color-green">204 </span> alira<br> roan road one</h1>
+        <a href="#" class="btn btn-light">rent | $ 12.000</a>
+      </div>
+      </div>
+    </div>
+  </div>
+      </div>
+          </div>
+            </div>
+            <!--END OF TESTIMONIAL 3 -->
+           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title">
+            <h2>Our Services</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+        <div class="card">
+   <div class="card-header">
+     <div class="icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+     </div>
+   <div class="card-title align-self-center">
+     <h2>Lifestyle</h2>
+   </div>
+ </div>
+  <div class="card-body">
+    <p>Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Praesent sapien massa,convallis a pellentesque nec, egestas non nisi.</p>
+    <a href="#">Read more<i class="fa-solid fa-angle-right"></i></a>
+  </div>
+        </div>
+      </div>
+         <div class="col-md-4">
+        <div class="card">
+   <div class="card-header">
+     <div class="icon">
+      <i class="fa-regular fa-calendar-days"></i>
+     </div>
+   <div class="card-title align-self-center">
+     <h2>Loans</h2>
+   </div>
+ </div>
+  <div class="card-body">
+   <p>Nulla porttitor accumsan tincidunt. Curabitur aliquet quam id dui posuere blandit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
+   <a href="#">Read more<i class="fa-regular fa-calendar-days"></i></a>
+   </div>
+        </div>
+      </div>
+         <div class="col-md-4">
+        <div class="card">
+   <div class="card-header">
+     <div class="icon">
+     <i class="fa-solid fa-clipboard-list"></i>
+     </div>
+   <div class="card-title align-self-center">
+     <h2>Sell</h2>
+   </div>
+ </div>
+  <div class="card-body">
+    <p>Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Praesent sapien massa,convallis a pellentesque nec, egestas non nisi.</p>
+    <a href="#">Read more<i class="fa-solid fa-angle-right"></i></a>
+  </div>
+        </div>
+      </div>
+    </div>
+ </div>
+</section>
+<section class="property">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="title-wrap d-flex justify-content-between">
+          <div class="title-box">
+                <h2>Latest Properties</h2>
+          </div>
+          <div class="title-link">
+          <a href="#">All Property<i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="property-carousel" class="owl-carousel">
+
+            <!--TESTIMONIAL 1 -->
+            <div class="item">
+             <div class="card">
+  <div class="wrapper">
+     <img class="card-img-top" src="images/property/property-10.jpg" alt="Card image">
+  </div>
+  <div class="card-img-overlay">
+  <div class="content">
+      <h2 class="card-title"><a href="#">206 Mount<br> Olive Road Two</a></h2>
+    <a href="#" class="btn btn-light">rent | $ 12.000</a>
+    <p><a href="#" class="link">Click here to view<i class="fa-solid fa-chevron-right"></i></a></p>
+    <div class="footer">
+      <ul class="list-unstyled d-flex justify-content-around">
+      <li><h4 class="card-info-title">Area</h4><span>340m<sup>2</sup></span></li>
+      <li><h4 class="card-info-title">Beds</h4><span>2</span></li>
+      <li><h4 class="card-info-title">Baths</h4><span>4</span></li>
+      <li><h4 class="card-info-title">Garages</h4><span>1</span></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+      </div>
+            </div>
+            <!--END OF TESTIMONIAL 1 -->
+            <!--TESTIMONIAL 2 -->
+            <div class="item">
+             <div class="card">
+  <div class="wrapper">
+     <img class="card-img-top" src="images/property/property-3.jpg" alt="Card image">
+  </div>
+  <div class="card-img-overlay">
+  <div class="content">
+      <h2 class="card-title"><a href="#">206 Mount<br> Olive Road Two</a></h2>
+    <a href="#" class="btn btn-light">rent | $ 12.000</a>
+     <p><a href="#" class="link">Click here to view<i class="fa-solid fa-chevron-right"></i></a></p>
+    <div class="footer">
+      <ul class="list-unstyled d-flex justify-content-around">
+      <li><h4 class="card-info-title">Area</h4><span>340m<sup>2</sup></span></li>
+      <li><h4 class="card-info-title">Beds</h4><span>2</span></li>
+      <li><h4 class="card-info-title">Baths</h4><span>4</span></li>
+      <li><h4 class="card-info-title">Garages</h4><span>1</span></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+      </div>
+            </div>
+            <!--END OF TESTIMONIAL 2 -->
+            <!--TESTIMONIAL 3 -->
+            <div class="item">
+             <div class="card">
+  <div class="wrapper">
+     <img class="card-img-top" src="images/property/property-6.jpg" alt="Card image">
+  </div>
+  <div class="card-img-overlay">
+  <div class="content">
+      <h2 class="card-title"><a href="#">206 Mount<br> Olive Road Two</a></h2>
+    <a href="#" class="btn btn-light">rent | $ 12.000</a>
+    <p><a href="#" class="link">Click here to view<i class="fa-solid fa-chevron-right"></i></a></p>
+    <div class="footer">
+      <ul class="list-unstyled d-flex justify-content-around">
+      <li><h4 class="card-info-title">Area</h4><span>340m<sup>2</sup></span></li>
+      <li><h4 class="card-info-title">Beds</h4><span>2</span></li>
+      <li><h4 class="card-info-title">Baths</h4><span>4</span></li>
+      <li><h4 class="card-info-title">Garages</h4><span>1</span></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+      </div>
+            </div>
+            <!--END OF TESTIMONIAL 3 -->
+               <!--TESTIMONIAL 4 -->
+            <div class="item">
+             <div class="card">
+  <div class="wrapper">
+     <img class="card-img-top" src="images/property/property-7.jpg" alt="Card image">
+  </div>
+  <div class="card-img-overlay">
+  <div class="content">
+      <h2 class="card-title"><a href="#">206 Mount<br> Olive Road Two</a></h2>
+    <a href="#" class="btn btn-light">rent | $ 12.000</a>
+      <p><a href="#" class="link">Click here to view<i class="fa-solid fa-chevron-right"></i></a></p>
+    <div class="footer">
+      <ul class="list-unstyled d-flex justify-content-around">
+      <li><h4 class="card-info-title">Area</h4><span>340m<sup>2</sup></span></li>
+      <li><h4 class="card-info-title">Beds</h4><span>2</span></li>
+      <li><h4 class="card-info-title">Baths</h4><span>4</span></li>
+      <li><h4 class="card-info-title">Garages</h4><span>1</span></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+      </div>
+            </div>
+            <!--END OF TESTIMONIAL 4 -->
+           </div>
+        </div>
+  </div>
+</section>
+<section class="agents">
+    <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="title-wrap d-flex justify-content-between">
+          <div class="title-box">
+                <h2>Best Agents</h2>
+          </div>
+          <div class="title-link">
+          <a href="#">All Agents<i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+  <img class="card-img-top" src="images/agents/agent-1.jpg" alt="Card image">
+  <div class="card-img-overlay">
+  <h3><a href="#">Margaret Sotillo<br> Escala</a></h3>
+  <p class="content">Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.</p>
+   <div class="info-agents">
+    <p><strong>Phone: </strong> +54 356 945234</p>
+    <p><strong>Email: </strong> agents@example.com</p>
+   </div>
+   <div class="footer">
+     <div class="socials-footer d-flex justify-content-center">
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                         <i class="fa-brands fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+   </div>
+  </div>
+</div>
+      </div>
+       <div class="col-md-4">
+        <div class="card">
+  <img class="card-img-top" src="images/agents/agent-4.jpg" alt="Card image">
+  <div class="card-img-overlay">
+ <h3><a href="#">Stiven Spilver<br> Darw</a></h3>
+  <p class="content">Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.</p>
+   <div class="info-agents">
+    <p><strong>Phone: </strong> +54 356 945234</p>
+    <p><strong>Email: </strong> agents@example.com</p>
+   </div>
+   <div class="footer">
+     <div class="socials-footer d-flex justify-content-center">
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                         <i class="fa-brands fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+   </div>
+  </div>
+</div>
+      </div>
+       <div class="col-md-4">
+        <div class="card">
+  <img class="card-img-top" src="images/agents/agent-5.jpg" alt="Card image">
+  <div class="card-img-overlay">
+ <h3><a href="#">Emma Toledo<br> Cascada</a></h3>
+  <p class="content">Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.</p>
+   <div class="info-agents">
+    <p><strong>Phone: </strong> +54 356 945234</p>
+    <p><strong>Email: </strong> agents@example.com</p>
+   </div>
+   <div class="footer">
+     <div class="socials-footer d-flex justify-content-center">
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                         <i class="fa-brands fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+   </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="news">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="title-wrap d-flex justify-content-between">
+          <div class="title-box">
+                <h2>Latest News</h2>
+          </div>
+          <div class="title-link">
+          <a href="#">All News<i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="news-carousel" class="owl-carousel">
+
+            <!--TESTIMONIAL 1 -->
+            <div class="item">
+             <div class="card">
+  <div class="wrapper">
+     <img class="card-img-top" src="images/news/post-2.jpg" alt="Card image">
+  </div>
+  <div class="card-img-overlay">
+  <div class="content">
+   <a href="#" class="btn btn-success">House</a>
+   <h2><a href="#">House is comming<br> new</a></h2>
+    <span>18 Sep. 2017</span>
+  </div>
+  </div>
+      </div>
+            </div>
+            <!--END OF TESTIMONIAL 1 -->
+            <!--TESTIMONIAL 2 -->
+           <div class="item">
+             <div class="card">
+  <div class="wrapper">
+     <img class="card-img-top" src="images/news/post-3.jpg" alt="Card image">
+  </div>
+  <div class="card-img-overlay">
+  <div class="content">
+   <a href="#" class="btn btn-success">Travel</a>
+   <h2><a href="#">Travel is comming<br> new</a></h2>
+    <span>18 Sep. 2017</span>
+  </div>
+  </div>
+      </div>
+            </div>
+            <!--END OF TESTIMONIAL 2 -->
+            <!--TESTIMONIAL 3 -->
+           <div class="item">
+             <div class="card">
+  <div class="wrapper">
+     <img class="card-img-top" src="images/news/post-5.jpg" alt="Card image">
+  </div>
+  <div class="card-img-overlay">
+  <div class="content">
+   <a href="#" class="btn btn-success">Park</a>
+   <h2><a href="#">Park is comming<br> new</a></h2>
+    <span>18 Sep. 2017</span>
+  </div>
+  </div>
+      </div>
+            </div>
+            <!--END OF TESTIMONIAL 3 -->
+               <!--TESTIMONIAL 4 -->
+            <div class="item">
+             <div class="card">
+  <div class="wrapper">
+     <img class="card-img-top" src="images/news/post-7.jpg" alt="Card image">
+  </div>
+  <div class="card-img-overlay">
+  <div class="content">
+   <a href="#" class="btn btn-success">Travel</a>
+   <h2><a href="#">Travel is comming<br> new</a></h2>
+    <span>18 Sep. 2017</span>
+  </div>
+  </div>
+      </div>
+            </div>
+            <!--END OF TESTIMONIAL 4 -->
+           </div>
+        </div>
+  </div>
+</section>
+<section class="testimonials">
+   <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="title-wrap d-flex justify-content-between">
+          <div class="title-box">
+                <h2>Testimonials</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+     <div class="row">
+        <div class="col-sm-12">
+          <div id="testimonials-carousel" class="owl-carousel">
+
+            <!--TESTIMONIAL 1 -->
+            <div class="item">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="images/testimonials/testimonial-1.jpg" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                <div class="card">
+ <i class="fa-solid fa-comment-dots"></i>
+  <div class="card-body">
+  <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, cupiditate ea nam praesentium debitis hic ber quibusdam voluptatibus officia expedita corpori.</p>
+  <div class="media">
+  <img src="images/testimonials/testimonial-1.jpg" alt="image" class="mr-3  rounded-circle">
+  <div class="media-body">
+   <h5 class="testimonial-author">Albert &amp; Erika</h5>
+  </div>
+</div>
+  </div>
+</div>
+              </div>
+            </div>
+            </div>
+            <!--END OF TESTIMONIAL 1 -->
+            <!--TESTIMONIAL 2 -->
+           <div class="item">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="images/testimonials/testimonial-2.jpg" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                <div class="card">
+ <i class="fa-solid fa-comment-dots"></i>
+  <div class="card-body">
+  <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, cupiditate ea nam praesentium debitis hic ber quibusdam voluptatibus officia expedita corpori.</p>
+  <div class="media">
+  <img src="images/testimonials/testimonial-2.jpg" alt="image" class="mr-3 rounded-circle">
+  <div class="media-body">
+  <h5 class="testimonial-author">Pablo &amp; Emma</h5>
+  </div>
+</div>
+  </div>
+</div>
+              </div>
+            </div>
+            </div>
+            <!--END OF TESTIMONIAL 2 -->
+         </div>
+        </div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h3>EstateAgency</h3>
+        <p class="text">Enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat duis sed aute irure.</p>
+        <ul class="list-unstyled">
+         <li><span class="color">Phone .</span> contact@example.com</li>
+         <li><span class="color">Email .</span> +54 356 945234</li>
+        </ul>
+      </div>
+      <div class="col-md-4 pt-50">
+        <h3>The Company</h3>
+        <ul class="list-unstyled">
+        <li><a href="#"><i class="fa-solid fa-chevron-right"></i>site map</a></li>
+        <li><a href="#"><i class="fa-solid fa-chevron-right"></i>legal</a></li>
+        <li><a href="#"><i class="fa-solid fa-chevron-right"></i>agent admin</a></li>
+        <li><a href="#"><i class="fa-solid fa-chevron-right"></i>careers</a></li>
+        <li><a href="#"><i class="fa-solid fa-chevron-right"></i>affiliate</a></li>
+        <li><a href="#"><i class="fa-solid fa-chevron-right"></i>privacy policy</a></li>
+        </ul>
+      </div>
+       <div class="col-md-4 pt-50">
+        <h3>International sites</h3>
+        <ul class="list-unstyled">
+        <li><a href="#"><i class="fa-solid fa-chevron-right"></i>venezuela</a></li>
+        <li><a href="#"><i class="fa-solid fa-chevron-right"></i>china</a></li>
+        <li><a href="#"><i class="fa-solid fa-chevron-right"></i>hong kong</a></li>
+        <li><a href="#"><i class="fa-solid fa-chevron-right"></i>argentina</a></li>
+        <li><a href="#"><i class="fa-solid fa-chevron-right"></i>singapore</a></li>
+        <li><a href="#"><i class="fa-solid fa-chevron-right"></i>philippines</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row bottom">
+      <div class="col-md-12">
+        <ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link" href="#">home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">about</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">property</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">blog</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">contact</a>
+  </li>
+</ul>
+   <ul class="nav social justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link" href="#"><i class="fa-brands fa-facebook"></i></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#"><i class="fa-brands fa-twitter"></i></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#"><i class="fa-brands fa-instagram"></i></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#"><i class="fa-brands fa-linkedin"></i></a>
+  </li>
+  </ul>
+  <div class="copyright">
+    <p>© Copyright <span>EstateAgency</span> All Rights Reserved.</p>
+  </div>
+  <div class="credits">
+           Designed by <a href="#">BootstrapMade</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  <a href="#" class="scrolltop"><i class="fas fa-arrow-up"></i></a>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
