@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <style type="text/css">
+.faq-section .mb-0 > a {
+  display: block;
+  position: relative;
+}
+.faq-section .mb-0 > a:after {
+  content: "\2b";
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  right: 0;
+  font-weight: 900;
+}
+.faq-section .mb-0 > a[aria-expanded="true"]:after {
+  content: "\f068";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+</style>
+  <title>Accordion</title>
+</head>
+<body>
+  <div class="card">
+  <div class="card-header text-center">
+    <span>FAQ & Knowledgebase</span>
+  </div>
+  <div class="card-body">
+    <div class="flex flex-column mb-5 mt-4 faq-section">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="heading-1">
+                <h5 class="mb-0">
+                  <a role="button" data-toggle="collapse" href="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+                                      What is FXCopier?
+                                    </a>
+                </h5>
+              </div>
+              <div id="collapse-1" class="collapse show" data-parent="#accordion" aria-labelledby="heading-1">
+                <div class="card-body">
+                  FXCOPIER is the worlds most reliable remote trade copier. Its allow you to copy trades almost instantly between hundreds of MT4 accounts through the use of technology. Many of the industries leading money managers use FXCopier to easily manage multiple
+                  client accounts in tandem.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="heading-2">
+                <h5 class="mb-0">
+                  <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                                      How to get this trade copier?
+                                    </a>
+                </h5>
+              </div>
+              <div id="collapse-2" class="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+                <div class="card-body">
+                  After subscription you will get our special trade copier. If you want to use this copier for business purpose or other commercial pupose then directly contact with www.fxcopier.co.uk.
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
