@@ -1,0 +1,100 @@
+@media screen and (max-width: 1024px){
+.navbar-light .navbar-nav .dropdown .dropdown-menu .submenu {
+    left: -200px;
+    top: 0px;
+}
+.navbar-light .dropdown.deep>a::after{
+    right: 20px;
+}
+.slider .owl-carousel .wrapper{
+    left: 200px;
+    width: 60%;
+    position: absolute;
+    bottom: 90px;
+}
+.slider .owl-carousel .item{
+    height: 1000px;
+}
+.cta .btn-danger{
+    padding: 10px 20px;
+}
+}
+@media screen and (max-width: 992px){
+    .navbar-light{
+        padding: 0px 110px 0 120px;
+    }
+.navbar-light .dropdown>a::after{
+    right: 30px;
+    color: #fff;
+}
+.navbar-light .navbar-nav .dropdown .dropdown-menu .submenu {
+    width: 95%;
+    margin-left: 17px;
+}
+.offcanvas-header{ display:block; }
+  .navbar-collapse {
+    position: fixed;
+    top:0; 
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #808080;
+    z-index: 100;
+    transition: visibility .2s ease-in-out;
+  }
+  .navbar-collapse.show {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+  .navbar-light .nav-item .nav-link{
+    color: #fff;
+  }
+  .navbar-light .btn-close{
+    margin-right: 20px;
+  }
+   .slider .owl-carousel .wrapper{
+     width: 90%;
+     left: 50px;
+     bottom: 60px;
+  }
+  .slider .owl-carousel .content h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+.slider .owl-carousel .item{
+    height: 500px;
+}
+.cta .btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+}
+@media screen and (max-width: 768px){
+    .navbar-light{
+        padding: 0px 26px 0 44px;
+    }
+.slider .owl-carousel .wrapper{
+   width: 85%;
+   left: 65px;
+}
+.slider .owl-carousel .item{
+    height: 700px;
+}
+.cta .btn-container{
+   justify-content: center;
+}
+    }
+@media screen and (max-width: 767px){
+    .navbar-light{
+        padding: 0 0 0 20px;
+    }
+.slider .owl-carousel .wrapper{
+   width: 77%;
+   left: 55px;
+}
+}
