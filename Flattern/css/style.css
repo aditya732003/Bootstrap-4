@@ -128,6 +128,9 @@ box-shadow: none;
   right: 30px;
   top: 13px;
 }
+.slider{
+    padding: 0;
+}
 .slider .owl-carousel .content{
     background: rgba(28, 23, 21, 0.7);
     padding: 20px;
@@ -455,6 +458,9 @@ footer .footer-top h4 {
     position: relative;
     padding-bottom: 12px;
 }
+footer .footer-top .footer-links{
+    margin-bottom: 30px;
+}
 footer .footer-top .footer-links ul{
     margin-left: -35px;
 }
@@ -464,9 +470,9 @@ footer .footer-top .footer-links ul li {
     align-items: center;
 }
 footer .footer-top .footer-links ul li i {
-    padding-right: 5px;
+    padding-right: 10px;
     color: #fd6f41;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1;
 }
 footer .footer-top .footer-links ul li a {
