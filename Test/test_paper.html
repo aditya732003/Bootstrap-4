@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+ <style type="text/css">
+* {
+  margin: 0px;
+  padding: 0px;
+  font: 16px 'Open Sans', sans-serif;
+  border: none;
+  box-sizing: border-box;
+}
+.container{
+	width: 725px;
+  background-color: #fff;
+}
+html, body {
+    background: linear-gradient(280.47deg, #8833FF 8.88%, #EF33FF 151.94%);
+    text-align: center;
+    height: 100%;
+    margin: 0rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#quiz {
+  padding: 30px 20px;
+}
+#quiz img{
+	width: 20%;
+}
+#quiz-name{
+	margin-bottom: 40px;
+}
+#quiz h1 {
+  font-weight: 600;
+  font-size: 36px;
+  text-align: left;
+  line-height: 44px;
+}
+
+#quiz button {
+  margin: 8px 0px 0px 8px;
+  padding: 4px 8px;
+  background: #9ACFCC;
+  color: #00403C;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+#quiz button:hover {
+  background: #36a39c;
+  color: #FFF;
+}
+
+#quiz button:disabled {
+  opacity: 0.5;
+  background: #9ACFCC;
+  color: #00403C;
+  cursor: default;
+}
+
+#question {
+  padding: 20px;
+  background: #FAFAFA;
+  text-align: center;
+}
+
+#question h2 {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#question input[type=radio] {
+  display: none;
+}
+
+#question label {
+  display: inline-block;
+  margin: 4px;
+  padding: 8px;
+  background: #FAE3BB;
+  color: #4C3000;
+  width: calc(50% - 8px);
+  min-width: 50px;
+  cursor: pointer;
+}
+
+#question label:hover {
+  background: #EBBB67;
+}
+
+#question input[type=radio]:checked + label {
+  background: #CB8306;
+  color: #FAFAFA;
+}
+
+#quiz-results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 44px;
+  left: 0px;
+  background: #FAFAFA;
+  width: 100%;
+  height: calc(100% - 44px);
+}
+
+#quiz-results-message {
+  display: block;
+  color: #00403C;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#quiz-results-score {
+  display: block;
+  color: #31706c;
+  font-size: 20px;
+}
+
+#quiz-results-score b {
+  color: #00403C;
+  font-weight: 600;
+  font-size: 20px;
+}
+#timer{
+    border: 1px solid #000;
+    border-radius: 50%;
+    padding: 9px 7px;
+}
+.questions{
+    border: 1px solid #000;
+    border-radius: 50%;
+    padding: 9px 7px;
+}
+ </style>
+	<title>Test Paper</title>
+</head>
+<body>
+<div class="container">
+  <div id="quiz">
+  <h1 id="quiz-name">
+   <div class="row">
+    <div class="col-6">
+      <img src="images/newLogo.png">
+    </div>
+    <div class="col-6 d-flex justify-content-end">
+      <h5 class="font-weight-bold">Webiwork Technologies</h5>
+    </div>
+   </div>
+   <div class="row pt-4">
+    <div class="col-6">
+       <div><span class="questions">1/10</span></div>
+    </div>
+     <div class="col-6 d-flex justify-content-end">
+       <div><span id="timer"></span></div>
+     </div>
+   </div>
+  </h1>
+  <button id="prev-question-button">Previous</button>
+  <button id="submit-button">Finish</button>
+  <button id="next-question-button">Next</button>
+  <div id="quiz-results">
+    <p id="quiz-results-message"></p>
+    <p id="quiz-results-score"></p>
+  </div>
+</div>
+</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <script type="text/javascript">
+var all_questions = [{
+  question_string: "What color is the sky?",
+  choices: {
+    correct: "Blue",
+    wrong: ["Pink", "Orange", "Green"]
+  }
+}, {
+  question_string: "Which of the following elements aren’t introduced in HTML5?",
+  choices: {
+    correct: "<input>",
+    wrong: ["<article>", "<footer>", "<hgroup>"]
+  }
+}, {
+  question_string: "How many wheels are there on a tricycle?",
+  choices: {
+    correct: "Three",
+    wrong: ["One", "Two", "Four"]
+  }
+}, {
+  question_string: 'Who is the main character of Harry Potter?',
+  choices: {
+    correct: "Harry Potter",
+    wrong: ["Hermione Granger", "Ron Weasley", "Voldemort"]
+  }
+}];
+
+// An object for a Quiz, which will contain Question objects.
+var Quiz = function(quiz_name) {
+  // Private fields for an instance of a Quiz object.
+  this.quiz_name = quiz_name;
+  
+  // This one will contain an array of Question objects in the order that the questions will be presented.
+  this.questions = [];
+}
+Quiz.prototype.add_question = function(question) {
+  // Randomly choose where to add question
+  var index_to_add_question = Math.floor(Math.random() * this.questions.length);
+  this.questions.splice(index_to_add_question, 0, question);
+}
+Quiz.prototype.render = function(container) {
+  // For when we're out of scope
+  var self = this;
+  
+  // Hide the quiz results modal
+  $('#quiz-results').hide();
+  
+ // Create a container for questions
+  var question_container = $('<div>').attr('id', 'question').insertAfter('#quiz-name');
+  
+  // Helper function for changing the question and updating the buttons
+  function change_question() {
+    self.questions[current_question_index].render(question_container);
+    $('#prev-question-button').prop('disabled', current_question_index === 0);
+    $('#next-question-button').prop('disabled', current_question_index === self.questions.length - 1);
+   
+    
+    // Determine if all questions have been answered
+    var all_questions_answered = true;
+    for (var i = 0; i < self.questions.length; i++) {
+      if (self.questions[i].user_choice_index === null) {
+        all_questions_answered = false;
+        break;
+      }
+    }
+    $('#submit-button').prop('disabled', !all_questions_answered);
+  }
+  
+  // Render the first question
+  var current_question_index = 0;
+  change_question();
+  
+  // Add listener for the previous question button
+  $('#prev-question-button').click(function() {
+    if (current_question_index > 0) {
+      current_question_index--;
+      change_question();
+    }
+  });
+  
+  // Add listener for the next question button
+  $('#next-question-button').click(function() {
+    if (current_question_index < self.questions.length - 1) {
+      current_question_index++;
+      change_question();
+    }
+  });
+ 
+  // Add listener for the submit answers button
+  $('#submit-button').click(function() {
+    // Determine how many questions the user got right
+    var score = 0;
+    for (var i = 0; i < self.questions.length; i++) {
+      if (self.questions[i].user_choice_index === self.questions[i].correct_choice_index) {
+        score++;
+      }
+      
+   $('#quiz-retry-button').click(function(reset) {
+      quiz.render(quiz_container);
+   });
+    
+    }
+    
+    var percentage = score / self.questions.length;
+    console.log(percentage);
+    var message;
+    if (percentage === 1) {
+      message = 'Great job!'
+    } else if (percentage >= .75) {
+      message = 'You did alright.'
+    } else if (percentage >= .5) {
+      message = 'Better luck next time.'
+    } else {
+      message = 'Maybe you should try a little harder.'
+    }
+    $('#quiz-results-message').text(message);
+    $('#quiz-results-score').html('You got <b>' + score + '/' + self.questions.length + '</b> questions correct.');
+    $('#quiz-results').slideDown();
+    $('#submit-button').slideUp();
+    $('#next-question-button').slideUp();
+    $('#prev-question-button').slideUp();
+    $('#quiz-retry-button').sideDown();
+    
+  });
+  
+  question_container.bind('user-select-change', function() {
+    var all_questions_answered = true;
+    for (var i = 0; i < self.questions.length; i++) {
+      if (self.questions[i].user_choice_index === null) {
+        all_questions_answered = false;
+        break;
+      }
+    }
+    $('#submit-button').prop('disabled', !all_questions_answered);
+  });
+}
+
+var Question = function(question_string, correct_choice, wrong_choices) {
+  // Private fields for an instance of a Question object.
+  this.question_string = question_string;
+  this.choices = [];
+  this.user_choice_index = null; // Index of the user's choice selection
+  
+  // Random assign the correct choice an index
+  this.correct_choice_index = Math.floor(Math.random(0, wrong_choices.length + 1));
+  
+  // Fill in this.choices with the choices
+  var number_of_choices = wrong_choices.length + 1;
+  for (var i = 0; i < number_of_choices; i++) {
+    if (i === this.correct_choice_index) {
+      this.choices[i] = correct_choice;
+    } else {
+      // Randomly pick a wrong choice to put in this index
+      var wrong_choice_index = Math.floor(Math.random(0, wrong_choices.length));
+      this.choices[i] = wrong_choices[wrong_choice_index];
+      
+      // Remove the wrong choice from the wrong choice array so that we don't pick it again
+      wrong_choices.splice(wrong_choice_index, 1);
+    }
+  }
+}
+
+Question.prototype.render = function(container) {
+  // For when we're out of scope
+  var self = this;
+  
+  // Fill out the question label
+  var question_string_h2;
+  if (container.children('h2').length === 0) {
+    question_string_h2 = $('<h2>').appendTo(container);
+  } else {
+    question_string_h2 = container.children('h2').first();
+  }
+  question_string_h2.text(this.question_string);
+  
+  // Clear any radio buttons and create new ones
+  if (container.children('input[type=radio]').length > 0) {
+    container.children('input[type=radio]').each(function() {
+      var radio_button_id = $(this).attr('id');
+      $(this).remove();
+      container.children('label[for=' + radio_button_id + ']').remove();
+    });
+  }
+  for (var i = 0; i < this.choices.length; i++) {
+    // Create the radio button
+    var choice_radio_button = $('<input>')
+      .attr('id', 'choices-' + i)
+      .attr('type', 'radio')
+      .attr('name', 'choices')
+      .attr('value', 'choices-' + i)
+      .attr('checked', i === this.user_choice_index)
+      .appendTo(container);
+    
+    // Create the label
+    var choice_label = $('<label>')
+      .text(this.choices[i])
+      .attr('for', 'choices-' + i)
+      .appendTo(container);
+  }
+  
+ 
+  $('input[name=choices]').change(function(index) {
+    var selected_radio_button_value = $('input[name=choices]:checked').val();
+    
+   
+    self.user_choice_index = parseInt(selected_radio_button_value.substr(selected_radio_button_value.length - 1, 1));
+    
+   
+    container.trigger('user-select-change');
+  });
+}
+
+
+$(document).ready(function() {
+  // Create an instance of the Quiz object
+  var quiz = new Quiz('My Quiz');
+  
+ 
+  for (var i = 0; i < all_questions.length; i++) {
+    // Create a new Question object
+    var question = new Question(all_questions[i].question_string, all_questions[i].choices.correct, all_questions[i].choices.wrong);
+    
+    // Add the question to the instance of the Quiz object that we created previously
+    quiz.add_question(question);
+  }
+  
+  // Render the quiz
+  var quiz_container = $('#quiz');
+  quiz.render(quiz_container);
+});
+
+document.getElementById('timer').innerHTML =
+  10 + ":" + 00;
+startTimer();
+
+function startTimer() {
+  var presentTime = document.getElementById('timer').innerHTML;
+  var timeArray = presentTime.split(/[:]+/);
+  var m = timeArray[0];
+  var s = checkSecond((timeArray[1] - 1));
+  if(s==59){m=m-1}
+  if(m<0){
+    return
+  }
+document.getElementById('timer').innerHTML =
+    m + ":" + s;
+  console.log(m)
+  setTimeout(startTimer, 1000);
+  }
+function checkSecond(sec) {
+  if (sec < 10 && sec >= 0) {sec = "0" + sec}; // add zero in front of numbers < 10
+  if (sec < 0) {sec = "59"};
+  return sec;
+}
+</script>
+</body>
+</html>

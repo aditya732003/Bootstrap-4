@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+   <style type="text/css">
+     html,body { 
+  height: 100%; 
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(280.47deg, #8833FF 8.88%, #EF33FF 151.94%);
+}
+.container{
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-form{ 
+  width:330px;
+  margin:20px;
+}
+.login-form img{
+  width: 50%; 
+  }
+.login-form .card-body .card-title{ font-weight:300; }
+.login-form .card-body .card-text form{
+  padding-top: 10px;
+  font-size: 14px;
+  margin-top: 30px;
+}
+.login-form .card-body .card-text form .form-group .form-control{
+  box-shadow: none;
+ }
+.login-form .card-body .card-text .btn-primary{
+  font-weight: bold;
+  margin-top:20px;
+}
+</style>
+	<title>Test</title>
+</head>
+<body>
+<div class="container">
+  <div class="card login-form">
+  <div class="card-body">
+   <div class="row">
+    <div class="col-6">
+      <img src="images/newLogo.png">
+    </div>
+    <div class="col-6">
+      <h5 class="font-weight-bold">Webiwork Technologies</h5>
+    </div>
+   </div>
+    <div class="card-text">
+     <form class="was-validated">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="passwrd" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Test<i class="fa-solid fa-right-long ml-2"></i></button>
+       </form>
+    </div>
+  </div>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
