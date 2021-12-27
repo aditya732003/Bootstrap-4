@@ -454,6 +454,9 @@ footer .footer-top .footer-links ul li a {
 footer .footer-top .footer-links ul li a:hover {
   color: #94c045;
   }
+footer .footer-top .footer-contact {
+    margin-bottom: 30px;
+}
 footer .footer-top .social-links a {
     background: #3c4133;
     color: #fff;
