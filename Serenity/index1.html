@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <title>Ripple Effect</title>
+  <style type="text/css">
+   .pinkBg {
+    background-color: #94c045;
+    background-image: radial-gradient(#94c045 50%, rgba(148, 192, 69, 0.4) 52%);
+}
+.intro-banner-vdo-play-btn{
+    height:94px;
+    width:94px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:-30px 0 0 -30px;
+    border-radius:100px;
+    z-index:1
+}
+.intro-banner-vdo-play-btn i{
+    line-height:56px;
+    font-size:20px
+    color: #fff;
+}
+.intro-banner-vdo-play-btn .ripple{
+    position:absolute;
+    width:160px;
+    height:160px;
+    z-index:-1;
+    left:50%;
+    top:50%;
+    opacity:0;
+    margin:-80px 0 0 -80px;
+    border-radius:100px;
+    animation:ripple 1.8s infinite
+}
+@keyframes ripple{
+    0%{
+        opacity:1;
+      
+        transform:scale(0)
+    }
+    100%{
+        opacity:0;
+       
+        transform:scale(1)
+    }
+}
+.intro-banner-vdo-play-btn .ripple:nth-child(2){
+    animation-delay:.3s;
+   }
+.intro-banner-vdo-play-btn .ripple:nth-child(3){
+    animation-delay:.6s;
+    }
+
+  </style>
+</head>
+<body>
+ <div class="container">
+  <div class="row">
+    <div class="container">
+  <div class="row">
+  <a href="#" class="intro-banner-vdo-play-btn pinkBg" target="_blank">
+<i class="fa-solid fa-play"></i>
+<span class="ripple pinkBg"></span>
+<span class="ripple pinkBg"></span>
+<span class="ripple pinkBg"></span>
+</a>
+  </div>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
