@@ -1,0 +1,425 @@
+html,body { 
+	height: 100%;
+  font-family: "Poppins", sans-serif;
+  background: #c0c0c0;
+}
+a{
+  color: #000;
+ }
+a:hover{
+  color: #000;
+  text-decoration: none;
+}
+.attendance1 .container-fluid{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.attendance1 .card .card-body{
+	padding: 30px;
+}
+.attendance1 h4{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 20px;
+}
+.attendance1 hr{
+	margin-top: 0;
+	margin-bottom: 2rem;
+}
+.attendance1 label{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+}
+.attendance1 .input-group .form-control{
+	border-right: 0;
+}
+.attendance1 .input-group .form-control:focus{
+	box-shadow: none;
+	}
+.attendance1 .input-group .input-group-append .input-group-text{
+	background: transparent;
+	border-left: 0;
+}
+.attendance1 .input-group .input-group-prepend .input-group-text{
+	background: transparent;
+	border-right: 0;
+ }
+ .attendance1 .tab-content .tab-pane .input-group {
+ 	width: 50%;
+ }
+ .attendance1 .tab-content .tab-pane .input-group .form-control{
+	border-left: 0;
+}
+ .attendance1 .tab-content .tab-pane p{
+ 	margin-bottom: 8px;
+ 	font-size: 14px;
+ }
+.attendance1 .fa-select {
+    font-family: 'Font Awesome 5 Free';
+    margin-top: 31px;
+}
+.attendance1 .wrapper{
+	position: relative;
+}
+.attendance1 .wrapper:after {
+        font-family: "Font Awesome 5 Free";
+        content:"\f0d7";
+        font-weight: 900;
+        color: #808080;
+        position: absolute;
+        right: 10px;
+        bottom: 7px;
+    }
+  .attendance1 .wrapper select{
+        appearance: none;
+    }
+.attendance1 .fa-redo-alt{
+	margin-top: 40px;
+}
+.attendance1 .btn-primary{
+	margin-top: 31px;
+	margin-left: -30px;
+}
+.attendance1 .nav-tabs{
+ border-bottom: 0;
+ margin-bottom: 20px;
+ position: relative;
+}
+.attendance1 .nav-tabs::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 98%;
+    background: #dee2e6;
+    top: 36px;
+    left: 11px;
+}
+.attendance1 .tab-content .tab-pane #reportrange{
+	padding: 5px 10px; 
+  border: 1px solid #ccc; 
+ }
+ .attendance1 .tab-content .tab-pane #reportrange i{
+ 	color: #808080;
+ }
+.attendance1 .nav-tabs .nav-link{
+	text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+}
+.attendance1 .nav-tabs .nav-link:hover{
+	border: 0;
+	}
+.attendance1 .nav-tabs .nav-link.active{
+	border: 0;
+	border-bottom: 1px solid rgb(0, 0, 255);
+}
+.attendance2 .btn-primary{
+	background-color: #16264c;
+	border: 0;
+	color: #fff;
+}
+.attendance2 i{
+	color: #32CD32;
+	padding-right: 5px;
+}
+.attendance2 .table td{
+	font-size: 14px;
+}
+.attendance2 #myDiv, .attendance2 #show{
+	color: #00FFFF;
+	font-weight: bold;
+	font-size: 20px;
+}
+.attendance2 .card{
+	border: 5px solid #16264c;
+}
+.attendance2 .card .card-body{
+	padding: 0;
+	}
+.attendance2 .card .card-header{
+	  background-color: #16264c;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0;
+	}
+.attendance2 .table td, .attendance2 .table th{
+	padding: .5rem 1rem;
+}
+.attendance2 .table thead{
+	background-color: rgba(0,0,0,.1);
+}
+.attendance2 .table th{
+	border-right: 2px solid #c0c0c0;
+}
+.attendance2 .table tr:nth-child(even) {
+  background-color: rgba(0,0,0,.05);
+}
+.openings h4{
+  color: #2692cf;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.openings p{
+	margin-bottom: 0px;
+}
+.openings .wrapper{
+	position: relative;
+	margin-bottom: 10px;
+}
+.openings .wrapper label{
+	margin-top: 5px;
+	text-align: right;
+	}
+.openings .wrapper:after {
+        font-family: "Font Awesome 5 Free";
+        content:"\f107";
+        font-weight: 900;
+        color: #000;
+        position: absolute;
+        right: 45px;
+        top: 7px;
+    }
+  .openings .wrapper select{
+        appearance: none;
+        margin-left: -20px;
+        background-color: rgba(0,0,0,0.1);
+    }
+    .openings .wrapper.state{
+    	margin-top: 57px;
+    }
+     .openings .wrapper.city{
+    	margin-top: 95px;
+    }
+    .openings .btn-primary{
+    	background-color: #2692cf;
+    	border: 0;
+    	text-transform: capitalize;
+    }
+.leave1 .card .card-body{
+	padding: 30px;
+}
+.leave1 h4{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 20px;
+}
+.leave1 hr{
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+.leave1 label{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+}
+.leave1 .input-group .form-control{
+	border-right: 0;
+}
+.leave1 .input-group .form-control:focus{
+	box-shadow: none;
+	}
+.leave1 .input-group .input-group-append .input-group-text{
+	background: transparent;
+	border-left: 0;
+}
+.leave1 .input-group .input-group-prepend .input-group-text{
+	background: transparent;
+	border-right: 0;
+ }
+ .leave1 .fa-select {
+    font-family: 'Font Awesome 5 Free';
+    margin-top: 31px;
+}
+.leave1 .wrapper{
+	position: relative;
+}
+.leave1 .wrapper:after {
+        font-family: "Font Awesome 5 Free";
+        content:"\f0d7";
+        font-weight: 900;
+        color: #808080;
+        position: absolute;
+        right: 10px;
+        bottom: 7px;
+    }
+  .leave1 .wrapper select{
+        appearance: none;
+    }
+.leave1 .fa-redo-alt{
+	margin-top: 40px;
+}
+.leave1 .btn-primary{
+	margin-top: 31px;
+	margin-left: -30px;
+}
+.leave1 p{
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	position: relative;
+}
+.leave1 p::before{
+	  position: absolute;
+    content: "";
+    height: 2px;
+    width: 15%;
+    background: rgb(0, 0, 255);
+    top: 30px;
+    left: 0px;
+	}
+.leave1 .calendar{
+	position: relative;
+}
+.leave1 .calendar i{
+	position: absolute;
+    right: 10px;
+    bottom: 11px;
+}
+.leave2 h4{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 20px;
+}
+.leave2 hr{
+	margin-top: 0;
+	margin-bottom: 2rem;
+}
+.leave2 label{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+}
+.leave2 .wrapper.first label{
+	margin-top: 12px;
+	}
+.leave2 .wrapper{
+	position: relative;
+}
+.leave2 .wrapper:after {
+        font-family: "Font Awesome 5 Free";
+        content:"\f0d7";
+        font-weight: 900;
+        color: #808080;
+        position: absolute;
+        right: 10px;
+        bottom: 7px;
+    }
+  .leave2 .wrapper select{
+        appearance: none;
+    }
+.leave2 .date{
+	position: relative;
+}
+.leave2 .date i{
+	position: absolute;
+    right: 10px;
+    bottom: 11px;
+}
+.leave2 p{
+	font-weight: bold;
+	font-size: 14px;	
+	margin-top: 18px;
+	text-transform: uppercase;
+}
+.leave2 h6 span{
+color: #32CD32;
+}
+.bootstrap-datetimepicker-widget table th{
+	line-height: 30px;
+	border: 1px solid #d3d3d3;
+}
+.leave2 .bootstrap-datetimepicker-widget table td.day{
+	line-height: 60px;
+	border: 1px solid #d3d3d3;
+}
+.leave2 .calendar, .leave2 .calendar_weekdays, .leave2 .calendar_content {
+    max-width: 360px;
+}
+.leave2 .calendar {
+    margin: auto;
+ }
+.leave2 .calendar_content, .leave2 .calendar_weekdays, .leave2 .calendar_header {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #dcdcdc;
+}
+.leave2 .calendar_weekdays div {
+    display:inline-block;
+    vertical-align:top;
+}
+.leave2 .calendar_weekdays div, .leave2 .calendar_content div {
+    width: 14.28571%;
+    overflow: hidden;
+    text-align: center;
+    background-color: transparent;
+    color: #6f6f6f;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+}
+.leave2 .calendar_content div {
+    border: 1px solid transparent;
+    float: left;
+    padding: 10px;
+}
+.leave2 .calendar_content div:hover {
+    border: 1px solid #dcdcdc;
+    cursor: default;
+}
+.leave2 .calendar_content div.blank:hover {
+    cursor: default;
+    border: 1px solid transparent;
+}
+.leave2 .calendar_content div.past-date {
+    color: #d5d5d5;
+}
+.leave2 .calendar_content div.today {
+    font-weight: bold;
+    font-size: 14px;
+    color: #1E90FF;
+    border: 1px solid #dcdcdc;
+}
+.leave2 .calendar_content div.selected {
+    background-color: #f0f0f0;
+}
+.leave2 .calendar_header {
+    width: 100%;
+    text-align: center;
+}
+.leave2 .calendar_header h2 {
+    padding: 0 10px;
+    font-weight: 900;
+    font-size: 18px;
+    color: rgb(0,0,255);
+    width:70%;
+    margin: 5px auto;
+}
+.leave2 button.switch-month {
+    background-color: transparent;
+    padding: 0;
+    outline: none;
+    border: none;
+    color: #dcdcdc;
+    float: left;
+    width:15%;
+    transition: color .2s;
+}
+.leave2 button.switch-month:hover {
+    color: #1E90FF;
+}
+.leave2 .calendar .calendar_header .switch-left i{
+	  position: absolute;
+    left: 10px;
+    bottom: 11px;
+}
+.leave2 .calendar .calendar_header .switch-right i{
+	  position: absolute;
+    right: 10px;
+    bottom: 11px;
+}

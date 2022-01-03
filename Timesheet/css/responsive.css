@@ -1,0 +1,60 @@
+@media screen and (max-width: 1024px){
+  .attendance1 .card{
+    width: 900px;
+  }
+}
+@media screen and (max-width: 992px){
+   }
+@media screen and (max-width: 768px){
+  .openings .wrapper label {
+   font-size: 12px;
+}
+   }
+@media screen and (max-width: 767px){
+	.attendance1 h4{
+    font-size: 18px;
+  }
+  .attendance1 .fa-select{
+    margin-top: 16px;
+  }
+  .attendance1 .fa-redo-alt{
+    margin-top: 10px;
+  }
+  .attendance1 .btn-primary {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+}
+.openings .wrapper select{
+  margin-left: 0;
+}
+.openings .wrapper.state{
+      margin-top: 0px;
+    }
+     .openings .wrapper.city{
+      margin-top: 0px;
+    }
+    .openings .wrapper:after{
+      top: 38px;
+    }
+    .openings .wrapper label{
+      text-align: left;
+    }
+    .leave1 h4{
+    font-size: 18px;
+  }
+  .leave1 .fa-select{
+    margin-top: 16px;
+  }
+  .leave1 .fa-redo-alt{
+    margin-top: 10px;
+  }
+  .leave1 .btn-primary {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+}
+.leave2 .leave{
+  position: absolute;
+}
+}

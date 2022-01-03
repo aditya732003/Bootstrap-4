@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/responsive.css">
+	<title>Leave</title>
+</head>
+<body>
+	<section class="leave1 pt-5">
+		<div class="container-fluid">
+			<div class="card">
+				<div class="card-body">
+			<h4>leave balance report</h4>
+			<hr>
+			<form>
+  <div class="form-row">
+    <div class="col-md-5 mb-4 mb-sm-0">
+    	 <label for="employee">particular employee</label>
+     <div class="input-group">
+    <div class="input-group-prepend">
+    <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Mr.</a>
+      <a class="dropdown-item" href="#">Ms.</a>
+      <a class="dropdown-item" href="#">Mrs.</a>
+    </div>
+  </div>
+  <input type="text" class="form-control" placeholder="Search Employee">
+   <div class="input-group-append">
+    <span class="input-group-text"><i class="fas fa-search"></i></span>
+  </div>
+ </div>
+    </div>
+    <div class="col-md-3">
+     <div class="form-group wrapper">
+  <label for="sel1">report period</label>
+  <select class="form-control" id="sel1">
+    <option>Date Wise</option>
+    <option>Week Wise</option>
+    <option>Month Wise</option>
+    <option>Year Wise</option>
+  </select>
+</div>
+    </div>
+    <div class="col-md-2">
+    	 <div class="form-group wrapper">
+   <select class="form-control fa-select" id="sel2">
+    <option value="pdf">&#xf1c1; PDF</option>
+    <option value="excel">&#xf1c3; Excel</option>
+    <option value="word">&#xf1c2; Word</option>
+    <option value="print">&#xf02f; Print</option>
+    <option value="preview">&#xf15c; Preview</option>
+  </select>
+</div>
+    </div>
+    <div class="col-md-1">
+    	<a href="#"><i class="fas fa-redo-alt"></i></a>
+    </div>
+    <div class="col-md-1">
+    	<button type="button" class="btn btn-primary">Generate</button>
+    </div>
+  </div>
+</form>
+<p>report criteria</p>
+<hr>
+<div class="row">
+  <div class="col-md-6">
+    <form>
+        <div class="form-group calendar">
+    <label for="date">as on date</label>
+    <input type="text" class="form-control" data-date-format="d-M-yyyy" id="datepicker">
+    <i class="far fa-calendar"></i>
+    </div>
+    </form>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <form>
+<div class="form-group mt-1 wrapper">
+    <label for="layout">leave type</label>
+  <select class="form-control" id="sel1">
+    <option>Select leave type</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+  </select>
+  </div>
+</form>
+  </div>
+</div>
+<div class="form-group mt-1 wrapper">
+    <label for="layout">layout options</label>
+  <select class="form-control" id="sel1">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+  </select>
+  </div>
+</form>
+  </div>
+</div>
+	</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+<script src="../js/custom.js"></script>
+</body>
+</html>
