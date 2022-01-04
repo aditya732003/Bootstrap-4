@@ -1,0 +1,72 @@
+@media screen and (max-width: 1024px){
+.navbar-light .navbar-nav .dropdown .dropdown-menu .submenu {
+    left: -200px;
+    top: 0px;
+}
+.navbar-light .dropdown.deep>a::after{
+    right: 20px;
+}
+.info-box .content{
+  padding-top: 60px;
+}
+.info-box #accordion{
+    padding-bottom: 50px;
+}
+}
+@media screen and (max-width: 992px){
+.navbar-light .dropdown>a::after{
+    right: 30px;
+    color: #fff;
+}
+.navbar-light .navbar-nav .dropdown .dropdown-menu .submenu {
+    width: 95%;
+    margin-left: 17px;
+}
+.offcanvas-header{ display:block; }
+  .navbar-collapse {
+    position: fixed;
+    top:0; 
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #808080;
+    z-index: 100;
+    transition: visibility .2s ease-in-out;
+  }
+  .navbar-collapse.show {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+  .navbar-light .nav-item .nav-link{
+    color: #fff;
+  }
+  .navbar-light .btn-close{
+    margin-right: 20px;
+  }
+  .info-box .content {
+    padding-top: 30px;
+}
+.info-box #accordion{
+    padding-bottom: 20px;
+}
+}
+@media screen and (max-width: 768px){
+   .slider .owl-carousel .item .content h2{
+    font-size: 28px;
+   }
+   .info-box #accordion{
+    padding-bottom: 50px;
+}
+.scrolltop{
+    right: 30px;
+    }
+    }
+@media screen and (max-width: 767px){
+   .portfolio .portfolio-menu{
+    width: 85%;
+   }
+}
