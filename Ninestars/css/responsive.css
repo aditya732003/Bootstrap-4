@@ -1,0 +1,114 @@
+@media screen and (max-width: 1024px){
+	.navbar-light .btn-warning{
+        margin-left: 25px;
+        margin-top: -20px;
+    } 
+     .navbar-light .navbar-nav .dropdown .dropdown-menu .submenu {
+    left: -200px;
+    top: 0px;
+     }
+     .banner{
+    height: 120vh;
+    }
+    .banner .image img {
+    animation: MoveUpDown 5s ease-in-out infinite alternate-reverse both;
+    }
+    @keyframes MoveUpDown {
+     0%, 100% {
+      transform: translateY(0);
+     }
+     50% {
+     transform: translateY(-30px);
+     }
+}
+.services .card{
+    padding: 30px 12px 30px 12px;
+}
+}
+@media screen and (max-width: 992px){
+.navbar-light .dropdown>a::after{
+    right: 30px;
+    color: #fff;
+}
+.navbar-light .navbar-nav .dropdown .dropdown-menu .submenu {
+    width: 95%;
+    margin-left: 17px;
+}
+.offcanvas-header{ display:block; }
+  .navbar-collapse {
+    position: fixed;
+    top:0; 
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #808080;
+    z-index: 100;
+    transition: visibility .2s ease-in-out;
+  }
+  .navbar-collapse.show {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+  .navbar-light .nav-item .nav-link{
+    color: #fff;
+  }
+  .navbar-light .btn-close{
+    margin-right: 20px;
+  }
+  .banner{
+    height: calc(100vh - 160px);
+    margin-top: 70px;
+  }
+.banner .image{
+    text-align: center;
+}
+ .banner .image img {
+    width: 50%;
+    animation: none;
+}
+.about img {
+    max-width: 70%;
+}
+.services .card{
+    padding: 30px;
+}
+}
+@media screen and (max-width: 768px){
+	.navbar-light .dropdown>a::after{
+        right: -10px;
+    }
+    .banner h1{
+        font-size: 28px;
+        line-height: 36px;
+       }
+       .banner h2{
+        font-size: 18px;
+        line-height: 24px;
+       }
+       .banner .image img {
+         width: 70%;
+         margin-bottom: 20px;
+       }
+}
+@media screen and (max-width: 767px){
+.navbar-light .dropdown>a::after {
+    right: -50px;
+    color: #fff;
+}
+.navbar-light .nav-item .nav-link{
+    padding: 10px 0 10px 10px;
+}
+.navbar-light .btn-warning{
+    margin-left: 10px;
+}
+.navbar-light .btn-close{
+    margin-right: 10px;
+}
+.banner .image img {
+ width: 80%;
+ }
+}
