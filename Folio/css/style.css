@@ -295,6 +295,13 @@ box-shadow: none;
     top: calc(50% - 18px);
     color: #b8a07e;
 }
+.portfolio .modal .modal-footer button:focus{
+  outline: none;
+  box-shadow: none;
+}
+.portfolio #image-gallery .modal-footer{
+  display: block;
+}
 .journal{
     background: #f7f7f7;
     padding-bottom: 60px;

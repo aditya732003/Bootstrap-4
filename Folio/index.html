@@ -197,7 +197,7 @@
                                    <p>App</p>
                                 </div>
                                 <div class="portfolio-links">
-                                    <a href="#" class="preview-link"><i class="fa-solid fa-plus" title="App 1"></i></a>
+                                    <a href="#" class="preview-link" data-toggle="modal" data-target="#image-gallery" data-image="images/portfolio/portfolio-1.jpg" data-image-id=""><i class="fa-solid fa-plus" title="App 1"></i></a>
                                     <a href="#" class="details-link"><i class="fa-solid fa-link" title="More Details"></i></a>
                                 </div>
                             </div>
@@ -214,7 +214,7 @@
                                    <p>Web</p>
                                 </div>
                                 <div class="portfolio-links">
-                                    <a href="#" class="preview-link"><i class="fa-solid fa-plus" title="App 1"></i></a>
+                                     <a href="#" class="preview-link" data-toggle="modal" data-target="#image-gallery" data-image="images/portfolio/portfolio-2.jpg" data-image-id=""><i class="fa-solid fa-plus" title="Web 3"></i></a>
                                     <a href="#" class="details-link"><i class="fa-solid fa-link" title="More Details"></i></a>
                                 </div>
                             </div>
@@ -231,7 +231,7 @@
                                    <p>App</p>
                                 </div>
                                 <div class="portfolio-links">
-                                    <a href="#" class="preview-link"><i class="fa-solid fa-plus" title="App 1"></i></a>
+                                    <a href="#" class="preview-link" data-toggle="modal" data-target="#image-gallery" data-image="images/portfolio/portfolio-3.jpg" data-image-id=""><i class="fa-solid fa-plus" title="App 2"></i></a>
                                     <a href="#" class="details-link"><i class="fa-solid fa-link" title="More Details"></i></a>
                                 </div>
                             </div>
@@ -248,7 +248,7 @@
                                    <p>Card</p>
                                 </div>
                                  <div class="portfolio-links">
-                                    <a href="#" class="preview-link"><i class="fa-solid fa-plus" title="App 1"></i></a>
+                                     <a href="#" class="preview-link" data-toggle="modal" data-target="#image-gallery" data-image="images/portfolio/portfolio-4.jpg" data-image-id=""><i class="fa-solid fa-plus" title="Card 2"></i></a>
                                     <a href="#" class="details-link"><i class="fa-solid fa-link" title="More Details"></i></a>
                                 </div>
                             </div>
@@ -265,7 +265,7 @@
                                    <p>Web</p>
                                 </div>
                                  <div class="portfolio-links">
-                                    <a href="#" class="preview-link"><i class="fa-solid fa-plus" title="App 1"></i></a>
+                                    <a href="#" class="preview-link" data-toggle="modal" data-target="#image-gallery" data-image="images/portfolio/portfolio-5.jpg" data-image-id=""><i class="fa-solid fa-plus" title="Web 2"></i></a>
                                     <a href="#" class="details-link"><i class="fa-solid fa-link" title="More Details"></i></a>
                                 </div>
                             </div>
@@ -282,7 +282,7 @@
                                    <p>App</p>
                                 </div>
                                  <div class="portfolio-links">
-                                    <a href="#" class="preview-link"><i class="fa-solid fa-plus" title="App 1"></i></a>
+                                    <a href="#" class="preview-link" data-toggle="modal" data-target="#image-gallery" data-image="images/portfolio/portfolio-6.jpg" data-image-id=""><i class="fa-solid fa-plus" title="App 3"></i></a>
                                     <a href="#" class="details-link"><i class="fa-solid fa-link" title="More Details"></i></a>
                                 </div>
                             </div>
@@ -290,6 +290,27 @@
                  </div>
           </div>
       </div>
+       <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="image-gallery-title"></h4>
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img id="image-gallery-image" class="img-fluid col-md-12" src="">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fa fa-arrow-left"></i>
+                        </button>
+
+                        <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fa fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>  
     <section class="journal" id="journal">
        <div class="container">
