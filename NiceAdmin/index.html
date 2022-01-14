@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
+   <link href='https://fonts.googleapis.com/css?family=Open+Sans|Nunito|Poppins' rel='stylesheet'>
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" type="text/css" href="css/responsive.css">
+ <!--  https://bootstrapmade.com/demo/NiceAdmin/ -->
+	<title>NiceAdmin</title>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#"><img src="images/header/logo.png">
+   <span class="d-none d-lg-block">NiceAdmin</span>
+  </a>
+  <a href="#" class="toggle-btn"><i class="fas fa-bars"></i></a>
+   <div class="search-bar">
+      <form class="search-form d-flex align-items-center" action="#">
+        <input type="text" name="query" placeholder="Search">
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </form>
+    </div>
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+       <li class="nav-item">
+       <a class="nav-link search-toggle" href="#"><i class="fas fa-search"></i></a>
+       </li>
+      <li class="nav-item dropdown">
+      <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">
+        <i class="far fa-bell"></i>
+        <span class="badge badge-primary">4</span>
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item header notifications" href="#">
+              You have 4 new notifications
+            <span class="badge badge-pill badge-primary">View all</span>
+              </a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item notifications" href="#">
+        	<div class="media">
+  <i class="fas fa-exclamation-circle"></i>
+  <div class="media-body">
+   <h4>Lorem Ipsum</h4>
+   <p>Quae dolorem earum veritatis oditseno</p>
+   <p>30 min. ago</p>
+  </div>
+</div>
+        </a>
+          <div class="dropdown-divider"></div>
+        <a class="dropdown-item notifications" href="#">
+        	<div class="media">
+  <i class="far fa-times-circle"></i>
+  <div class="media-body">
+   <h4>Atque rerum nesciunt</h4>
+   <p>Quae dolorem earum veritatis oditseno</p>
+   <p>1 hr. ago</p>
+  </div>
+</div>
+        </a>
+          <div class="dropdown-divider"></div>
+         <a class="dropdown-item notifications" href="#">
+        	<div class="media">
+  <i class="far fa-check-circle"></i>
+  <div class="media-body">
+   <h4>Sit rerum fuga</h4>
+   <p>Quae dolorem earum veritatis oditseno</p>
+   <p>2 hrs. ago</p>
+  </div>
+</div>
+        </a>
+          <div class="dropdown-divider"></div>
+         <a class="dropdown-item notifications" href="#">
+        	<div class="media">
+  <i class="fas fa-info-circle"></i>
+  <div class="media-body">
+   <h4>Dicta reprehenderit</h4>
+   <p>Quae dolorem earum veritatis oditseno</p>
+   <p>4 hrs. ago</p>
+  </div>
+</div>
+        </a>
+          <div class="dropdown-divider"></div>
+         <a class="dropdown-item footer" href="#">Show all notifications</a>
+      </div>
+    </li>
+     <li class="nav-item dropdown">
+      <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">
+       <i class="far fa-comment-alt"></i>
+       <span class="badge badge-success">3</span>
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item header" href="#">
+              You have 3 new messages
+         <span class="badge badge-pill badge-primary">View all</span>
+              </a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item messages" href="#">
+        	<div class="media">
+ <img src="images/header/messages-1.jpg" alt="" class="rounded-circle">
+  <div class="media-body">
+  <h4>Maria Hudson</h4>
+  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+  <p>4 hrs. ago</p>
+  </div>
+</div>
+        </a>
+          <div class="dropdown-divider"></div>
+        <a class="dropdown-item messages" href="#">
+        	<div class="media">
+   <img src="images/header/messages-2.jpg" alt="" class="rounded-circle">
+  <div class="media-body">
+   <h4>Atque rerum nesciunt</h4>
+   <p>Quae dolorem earum veritatis oditseno</p>
+   <p>1 hr. ago</p>
+  </div>
+</div>
+        </a>
+          <div class="dropdown-divider"></div>
+         <a class="dropdown-item messages" href="#">
+        	<div class="media">
+   <img src="images/header/messages-3.jpg" alt="" class="rounded-circle">
+  <div class="media-body">
+   <h4>Sit rerum fuga</h4>
+   <p>Quae dolorem earum veritatis oditseno</p>
+   <p>2 hrs. ago</p>
+  </div>
+</div>
+        </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item footer" href="#">Show all messages</a>
+      </div>
+    </li>
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle kevin d-flex" href="#" id="navbardrop" data-toggle="dropdown">
+        <img src="images/header/profile-img.jpg"> 
+        <span class="d-none d-md-block pl-2">K. Anderson</span>
+      </a>
+      <div class="dropdown-menu kevin">
+      	<div class="dropdown-header text-center">
+      		<h6>Kevin Anderson</h6>
+      		<span>Web Designer</span>
+      	</div>
+      	<div class="dropdown-divider"></div>
+        <a class="dropdown-item kevin" href="#">
+        	<i class="far fa-user"></i> My Profile
+        </a>
+         <div class="dropdown-divider"></div>
+        <a class="dropdown-item kevin" href="#">
+        	<i class="fas fa-cog"></i> Account Settings
+        </a>
+         <div class="dropdown-divider"></div>
+        <a class="dropdown-item kevin" href="#">
+        	<i class="far fa-question-circle"></i> Need Help?
+        </a>
+         <div class="dropdown-divider"></div>
+         <a class="dropdown-item kevin" href="#">
+        	<i class="fas fa-sign-out-alt"></i> Sign Out
+        </a>
+    </div>
+    </li>
+    </ul>
+  </div>
+</nav>
+	</header>
+	<aside class="sidebar" id="sidebar">
+	<ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link" href="#">
+      	<i class="fas fa-table"></i>
+      	<span>Dashboard</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="#components" data-toggle="collapse">
+      	<i class="fas fa-bars"></i>
+      	<span>Components</span>
+      	<i class="fas fa-chevron-down ml-auto"></i>
+      </a>
+      <ul class="list-unstyled collapse content" id="components" data-parent="#sidebar">
+      	<li><a href="#">
+      		<i class="far fa-circle"></i>
+      		<span>Alerts</span>
+      	</a></li>
+      	<li><a href="#">
+      		<i class="far fa-circle"></i>
+      		<span>Accordion</span>
+      	</a></li>
+      	<li><a href="#">
+      		<i class="far fa-circle"></i>
+      		<span>Badges</span>
+      	</a></li>
+      	<li><a href="#">
+      		<i class="far fa-circle"></i>
+      		<span>Breadcrumbs</span>
+      	</a></li>
+      	<li><a href="#">
+      		<i class="far fa-circle"></i>
+      		<span>Buttons</span>
+      	</a></li>
+      	<li><a href="#">
+      		<i class="far fa-circle"></i>
+      		<span>Cards</span>
+      	</a></li>
+      	<li><a href="#">
+      		<i class="far fa-circle"></i>
+      		<span>Carousel</span>
+      	</a></li>
+      	<li><a href="#">
+      		<i class="far fa-circle"></i>
+      		<span>List group</span>
+      	</a></li>
+      	<li><a href="#">
+      		<i class="far fa-circle"></i>
+      		<span>Modal</span>
+      	</a></li>
+      	<li><a href="#">
+      		<i class="far fa-circle"></i>
+      		<span>Tabs</span>
+      	</a></li>
+      	<li><a href="#">
+      		<i class="far fa-circle"></i>
+      		<span>Pagination</span>
+      	</a></li>
+      	<li><a href="#">
+      		<i class="far fa-circle"></i>
+      		<span>Progress</span>
+      	</a></li>
+      	<li><a href="#">
+      		<i class="far fa-circle"></i>
+      		<span>Spinners</span>
+      	</a></li>
+      		<li><a href="#">
+      		<i class="far fa-circle"></i>
+      		<span>Tooltips</span>
+      	</a></li>
+      </ul>
+    </li>
+  <li class="nav-item">
+      <a class="nav-link collapsed" href="#forms" data-toggle="collapse">
+      	<i class="far fa-file-alt"></i>
+      	<span>Forms</span>
+      	<i class="fas fa-chevron-down ml-auto"></i>
+      </a>
+      <ul class="list-unstyled collapse content" id="forms" data-parent="#sidebar">
+      	<li><a href="#">
+      		<i class="far fa-circle"></i>
+      		<span>Form Elements</span>
+      	</a></li>
+      	<li><a href="#">
+      		<i class="far fa-circle"></i>
+      		<span>Form Layouts</span>
+      	</a></li>
+      	<li><a href="#">
+      		<i class="far fa-circle"></i>
+      		<span>Form Editors</span>
+      	</a></li>
+      	<li><a href="#">
+      		<i class="far fa-circle"></i>
+      		<span>Form Validation</span>
+      	</a></li>
+      	</ul>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="#tables" data-toggle="collapse">
+      	<i class="fas fa-table"></i>
+      	<span>Tables</span>
+      	<i class="fas fa-chevron-down ml-auto"></i>
+      </a>
+      <ul class="list-unstyled collapse content" id="tables" data-parent="#sidebar">
+      	<li><a href="#">
+      		<i class="far fa-circle"></i>
+      		<span>General Tables</span>
+      	</a></li>
+      	<li><a href="#">
+      		<i class="far fa-circle"></i>
+      		<span>Data Tables</span>
+      	</a></li>
+      </ul>
+    </li>
+   <li class="nav-item">
+      <a class="nav-link collapsed" href="#charts" data-toggle="collapse">
+      	<i class="fas fa-signal"></i>
+      	<span>Charts</span>
+      	<i class="fas fa-chevron-down ml-auto"></i>
+      </a>
+      <ul class="list-unstyled collapse content" id="charts" data-parent="#sidebar">
+      	<li><a href="#">
+      		<i class="far fa-circle"></i>
+      		<span>Chart.js</span>
+      	</a></li>
+      	<li><a href="#">
+      		<i class="far fa-circle"></i>
+      		<span>ApexCharts</span>
+      	</a></li>
+      	<li><a href="#">
+      		<i class="far fa-circle"></i>
+      		<span>ECharts</span>
+      	</a></li>
+      </ul>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link collapsed" href="#icons" data-toggle="collapse">
+      	<i class="far fa-gem"></i>
+      	<span>Icons</span>
+      	<i class="fas fa-chevron-down ml-auto"></i>
+      </a>
+      <ul class="list-unstyled collapse content" id="icons" data-parent="#sidebar">
+      	<li><a href="#">
+      		<i class="far fa-circle"></i>
+      		<span>Bootstrap Icons</span>
+      	</a></li>
+      	<li><a href="#">
+      		<i class="far fa-circle"></i>
+      		<span>Remix Icons</span>
+      	</a></li>
+      	<li><a href="#">
+      		<i class="far fa-circle"></i>
+      		<span>Boxicons</span>
+      	</a></li>
+      </ul>
+    </li>
+    <li class="nav-heading">Pages</li>
+     <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+        <i class="far fa-question-circle"></i>
+        <span>Profile</span>
+    </a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+       <i class="far fa-envelope"></i>
+        <span>Contact</span>
+    </a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+       <i class="far fa-list-alt"></i>
+        <span>Register</span>
+    </a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+       <i class="fas fa-sign-in-alt"></i>
+        <span>Login</span>
+    </a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+       <i class="fas fa-minus-circle"></i>
+        <span>Error 404</span>
+    </a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link collapsed" href="#">
+       <i class="far fa-file"></i>
+        <span>Blank</span>
+    </a>
+  </li>
+  </ul>
+	</aside>
+  <main class="main">
+    <div class="page-title">
+      <h1>Dashboard</h1>
+      <ul class="breadcrumb">
+  <li class="breadcrumb-item"><a href="#">Home</a></li>
+  <li class="breadcrumb-item active">Dashboard</li>
+</ul>
+    </div>
+    <section class="dashboard">
+       <div class="row">
+         <div class="col-lg-8">
+           <div class="row">
+             <div class="col-md-6">
+               <div class="card sales">
+                   <div class="filter dropdown">
+ <a href="#" class="icon" data-toggle="dropdown">
+   <i class="fa-solid fa-ellipsis"></i>
+ </a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#"><h6>Filter</h6></a>
+    <a class="dropdown-item" href="#">Today</a>
+    <a class="dropdown-item" href="#">This Month</a>
+    <a class="dropdown-item" href="#">This Year</a>
+  </div>
+</div>
+  <div class="card-body">
+  <h5 class="card-title">Sales <span>| Today</span></h5>
+  <div class="media">
+  <div class="icon">
+    <i class="fa-solid fa-cart-shopping"></i>
+  </div>
+  <div class="media-body pl-3">
+    <h6>145</h6>
+    <span class="text-success small pt-1 font-weight-bold">12%</span>
+    <span class="text-muted small pt-2 pl-1">increase</span>
+  </div>
+</div>
+                 </div>
+               </div>
+             </div>
+             <div class="col-md-6">
+               <div class="card revenue">
+                 <div class="filter dropdown">
+ <a href="#" class="icon" data-toggle="dropdown">
+   <i class="fa-solid fa-ellipsis"></i>
+ </a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#"><h6>Filter</h6></a>
+    <a class="dropdown-item" href="#">Today</a>
+    <a class="dropdown-item" href="#">This Month</a>
+    <a class="dropdown-item" href="#">This Year</a>
+  </div>
+</div>
+<div class="card-body">
+<h5 class="card-title">Revenue <span>| This Month</span></h5>
+                   <div class="media">
+  <div class="icon">
+    <i class="fa-solid fa-dollar-sign"></i>
+  </div>
+  <div class="media-body pl-3">
+    <h6>$3,264</h6>
+    <span class="text-success small pt-1 font-weight-bold">8%</span>
+    <span class="text-muted small pt-2 pl-1">increase</span>
+  </div>
+</div>
+                 </div>
+               </div>
+             </div> 
+              <div class="col-md-12">
+               <div class="card customers">
+                  <div class="filter dropdown">
+ <a href="#" class="icon" data-toggle="dropdown">
+   <i class="fa-solid fa-ellipsis"></i>
+ </a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#"><h6>Filter</h6></a>
+    <a class="dropdown-item" href="#">Today</a>
+    <a class="dropdown-item" href="#">This Month</a>
+    <a class="dropdown-item" href="#">This Year</a>
+  </div>
+</div>
+<div class="card-body">
+<h5 class="card-title">Customers <span>| This Year</span></h5>
+                   <div class="media">
+  <div class="icon">
+   <i class="fa-solid fa-user-group"></i>
+  </div>
+  <div class="media-body pl-3">
+    <h6>1244</h6>
+    <span class="text-danger small pt-1 font-weight-bold">12%</span>
+    <span class="text-muted small pt-2 pl-1">decrease</span>
+  </div>
+</div>
+                 </div>
+               </div>
+             </div> 
+             <div class="col-12">
+               <div class="card">
+                  <div class="filter dropdown">
+ <a href="#" class="icon" data-toggle="dropdown">
+   <i class="fa-solid fa-ellipsis"></i>
+ </a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#"><h6>Filter</h6></a>
+    <a class="dropdown-item" href="#">Today</a>
+    <a class="dropdown-item" href="#">This Month</a>
+    <a class="dropdown-item" href="#">This Year</a>
+  </div>
+</div>
+<div class="card-body">
+  <h5 class="card-title">Reports <span>/Today</span></h5>
+  <canvas id="myChart" width="857" height="350"></canvas>
+</div>
+               </div>
+             </div>
+               <div class="col-12">
+               <div class="card">
+                  <div class="filter dropdown">
+ <a href="#" class="icon" data-toggle="dropdown">
+   <i class="fa-solid fa-ellipsis"></i>
+ </a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#"><h6>Filter</h6></a>
+    <a class="dropdown-item" href="#">Today</a>
+    <a class="dropdown-item" href="#">This Month</a>
+    <a class="dropdown-item" href="#">This Year</a>
+  </div>
+</div>
+<div class="card-body">
+  <h5 class="card-title">Recent Sales <span>| Today</span></h5>
+   <table class="table table-borderless" id="example">
+     <thead>
+      <tr>
+        <th>#</th>
+        <th>Customer</th>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>#2644</td>
+        <td>Raheem Lehner</td>
+        <td><a href="#">Sunt similique distinctio</a></td>
+        <td>$165</td>
+        <td><span class="badge badge-success">Approved</span></td>
+      </tr>
+      <tr>
+        <td>#2644</td>
+        <td>Angus Grady</td>
+        <td><a href="#">Ut voluptatem id earum et</a></td>
+        <td>$67</td>
+        <td><span class="badge badge-danger">Rejected</span></td>
+      </tr>
+      <tr>
+        <td>#2457</td>
+        <td>Brandon Jacob</td>
+        <td><a href="#">At praesentium minu</a></td>
+        <td>$64</td>
+        <td><span class="badge badge-success">Approved</span></td>
+      </tr>
+       <tr>
+        <td>#2147</td>
+        <td>Bridie Kessier</td>
+        <td><a href="#">Blanditiis dolor omnis similique</a></td>
+        <td>$47</td>
+        <td><span class="badge badge-warning">Pending</span></td>
+      </tr>
+      <tr>
+        <td>#2049</td>
+        <td>Ashleigh Langosh</td>
+        <td><a href="#">At recusandae consectetur</a></td>
+        <td>$147</td>
+        <td><span class="badge badge-success">Approved</span></td>
+      </tr>
+     </tbody>
+  </table>
+</div>
+               </div>
+             </div>
+               <div class="col-12">
+               <div class="card">
+                  <div class="filter dropdown">
+ <a href="#" class="icon" data-toggle="dropdown">
+   <i class="fa-solid fa-ellipsis"></i>
+ </a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#"><h6>Filter</h6></a>
+    <a class="dropdown-item" href="#">Today</a>
+    <a class="dropdown-item" href="#">This Month</a>
+    <a class="dropdown-item" href="#">This Year</a>
+  </div>
+</div>
+<div class="card-body">
+ <h5 class="card-title">Top Selling <span>| Today</span></h5>
+   <table class="table table-borderless" id="example">
+     <thead>
+      <tr>
+        <th>Preview</th>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Sold</th>
+        <th>Revenue</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#"><img src="images/products/product-1.jpg"></a></td>
+        <td><a href="#">Ut inventore ipsa voluptas nulla</a></td>
+        <td>$64</td>
+        <td>124</td>
+        <td>$5,828</td>
+      </tr>
+      <tr>
+        <td><a href="#"><img src="images/products/product-2.jpg"></a></td>
+        <td><a href="#">Exercitationem similique doloremque</a></td>
+        <td>$46</td>
+        <td>98</td>
+        <td>$4,508</td>
+      </tr>
+      <tr>
+        <td><a href="#"><img src="images/products/product-3.jpg"></a></td>
+        <td><a href="#">Doloribus nisi exercitationem</a></td>
+        <td>$32</td>
+        <td>63</td>
+        <td>$2,016</td>
+      </tr>
+       <tr>
+         <td><a href="#"><img src="images/products/product-4.jpg"></a></td>
+        <td><a href="#">Officiis quaerat sint rerum error</a></td>
+        <td>$32</td>
+        <td>63</td>
+        <td>$2,016</td>
+      </tr>
+        <tr>
+         <td><a href="#"><img src="images/products/product-5.jpg"></a></td>
+        <td><a href="#">Sit unde debitis delectus repellendus</a></td>
+        <td>$79</td>
+        <td>41</td>
+        <td>$3,239</td>
+      </tr>
+      </tbody>
+  </table>
+</div>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="col-lg-4">
+            <div class="card">
+                  <div class="filter dropdown">
+ <a href="#" class="icon" data-toggle="dropdown">
+   <i class="fa-solid fa-ellipsis"></i>
+ </a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#"><h6>Filter</h6></a>
+    <a class="dropdown-item" href="#">Today</a>
+    <a class="dropdown-item" href="#">This Month</a>
+    <a class="dropdown-item" href="#">This Year</a>
+  </div>
+</div>
+<div class="card-body">
+<h5 class="card-title">Recent Activity <span>| Today</span></h5>
+    <div class="activity">
+      <div class="media">
+  <div class="label">
+    32 min
+  </div>
+  <i class="fa-solid fa-circle text-success"></i>
+  <div class="media-body">
+   Quia quae rerum <a href="#" class="font-weight-bold text-dark">explicabo officiis</a> beatae
+  </div>
+</div>
+ <div class="media">
+  <div class="label">
+    56 min
+  </div>
+  <i class="fa-solid fa-circle text-danger"></i>
+  <div class="media-body">
+  Voluptatem blanditiis blanditiis eveniet
+  </div>
+</div>
+ <div class="media">
+  <div class="label">
+    2 hrs
+  </div>
+  <i class="fa-solid fa-circle text-primary"></i>
+  <div class="media-body">
+  Voluptates corrupti molestias voluptatem
+  </div>
+</div>
+ <div class="media">
+  <div class="label">
+   1 day
+  </div>
+  <i class="fa-solid fa-circle text-info"></i>
+  <div class="media-body">
+   Tempore autem saepe <a href="#" class="font-weight-bold text-dark">occaecati voluptatem</a> tempore
+  </div>
+</div>
+ <div class="media">
+  <div class="label">
+   2 days
+  </div>
+  <i class="fa-solid fa-circle text-warning"></i>
+  <div class="media-body">
+   Est sit eum reiciendis exercitationem
+  </div>
+</div>
+ <div class="media">
+  <div class="label">
+   4 weeks
+  </div>
+  <i class="fa-solid fa-circle text-secondary"></i>
+  <div class="media-body">
+  Dicta dolorem harum nulla eius. Ut quidem quidem sit quas
+  </div>
+</div>
+</div>             
+</div>
+</div>
+      <div class="card">
+                  <div class="filter dropdown">
+ <a href="#" class="icon" data-toggle="dropdown">
+   <i class="fa-solid fa-ellipsis"></i>
+ </a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#"><h6>Filter</h6></a>
+    <a class="dropdown-item" href="#">Today</a>
+    <a class="dropdown-item" href="#">This Month</a>
+    <a class="dropdown-item" href="#">This Year</a>
+  </div>
+</div>
+<div class="card-body">
+  <h5 class="card-title">Budget Report <span>| This Month</span></h5>
+    <canvas id="myChart1" width="857" height="350"></canvas>
+</div>
+               </div>
+                <div class="card">
+                  <div class="filter dropdown">
+ <a href="#" class="icon" data-toggle="dropdown">
+   <i class="fa-solid fa-ellipsis"></i>
+ </a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#"><h6>Filter</h6></a>
+    <a class="dropdown-item" href="#">Today</a>
+    <a class="dropdown-item" href="#">This Month</a>
+    <a class="dropdown-item" href="#">This Year</a>
+  </div>
+</div>
+<div class="card-body">
+<h5 class="card-title">Website Traffic <span>| Today</span></h5>
+    <canvas id="myChart2" width="857" height="350"></canvas>
+</div>
+               </div>
+                <div class="card">
+                  <div class="filter dropdown">
+ <a href="#" class="icon" data-toggle="dropdown">
+   <i class="fa-solid fa-ellipsis"></i>
+ </a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#"><h6>Filter</h6></a>
+    <a class="dropdown-item" href="#">Today</a>
+    <a class="dropdown-item" href="#">This Month</a>
+    <a class="dropdown-item" href="#">This Year</a>
+  </div>
+</div>
+<div class="card-body">
+<h5 class="card-title">News &amp; Updates <span>| Today</span></h5>
+  <div class="media">
+  <img src="images/news/news-1.jpg" alt="news" class="mr-3">
+  <div class="media-body">
+    <h4><a href="#">Nihil blanditiis at in nihil autem</a></h4>
+    <p>Sit recusandae non aspernatur laboriosam. Quia enim eligendi sed ut harum...</p>
+  </div>
+</div>
+ <div class="media">
+  <img src="images/news/news-2.jpg" alt="news" class="mr-3">
+  <div class="media-body">
+    <h4><a href="#">Quidem autem et impedit</a></h4>
+    <p>Illo nemo neque maiores vitae officiis cum eum turos elan dries werona nande...</p>
+  </div>
+</div>
+ <div class="media">
+  <img src="images/news/news-3.jpg" alt="news" class="mr-3">
+  <div class="media-body">
+  <h4><a href="#">Id quia et et ut maxime similique occaecati ut</a></h4>
+  <p>Fugiat voluptas vero eaque accusantium eos. Consequuntur sed ipsam et totam...</p>
+  </div>
+</div>
+ <div class="media">
+  <img src="images/news/news-4.jpg" alt="news" class="mr-3">
+  <div class="media-body">
+    <h4><a href="#">Laborum corporis quo dara net para</a></h4>
+    <p>Qui enim quia optio. Eligendi aut asperiores enim repellendusvel rerum cuder...</p>
+  </div>
+</div>
+ <div class="media">
+  <img src="images/news/news-5.jpg" alt="news" class="mr-3">
+  <div class="media-body">
+    <h4><a href="#">Et dolores corrupti quae illo quod dolor</a></h4>
+    <p>Odit ut eveniet modi reiciendis. Atque cupiditate libero beatae dignissimos eius...</p>
+  </div>
+</div>
+
+</div>
+               </div>
+         </div>
+       </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="copyright">
+      © Copyright <strong>NiceAdmin</strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+     Designed by <a href="#">BootstrapMade</a>
+    </div>
+  </footer>
+  <a href="#" class="scrolltop"><i class="fas fa-arrow-up"></i></a>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+   <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+   <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+   <script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>

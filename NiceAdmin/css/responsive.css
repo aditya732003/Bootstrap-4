@@ -1,0 +1,29 @@
+@media screen and (max-width: 1024px) {
+ .main .dashboard .card .card-body .activity .media .label::before{
+  top: -60px;
+ }
+}
+@media screen and (max-width: 768px) {
+  .navbar .navbar-nav .nav-item .nav-link.kevin{
+    padding-right: 20px;
+  }
+ .navbar .navbar-nav .dropdown .dropdown-menu{
+    left: -160px;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar .navbar-nav .dropdown .dropdown-menu::before{
+    position: unset;
+  }
+  .navbar .navbar-nav .dropdown .dropdown-menu.kevin{
+    left: -305px;
+    width: 380px;
+  }
+ .navbar .navbar-nav .nav-item .nav-link.kevin{
+    padding-right: 0;
+  }
+  .navbar .navbar-nav .dropdown .dropdown-toggle::after {
+    content: "";
+  }
+}
