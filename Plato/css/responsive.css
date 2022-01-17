@@ -1,0 +1,86 @@
+@media screen and (max-width: 1024px){
+.banner h1 {
+    width: 50%;
+}
+.banner h2 {
+   width: 50%;
+}
+.navbar-light .navbar-nav .dropdown .dropdown-menu .submenu {
+    left: -200px;
+    top: 0px;
+}
+.navbar-light .dropdown.deep>a::after{
+    right: 20px;
+}
+}
+@media screen and (max-width: 992px){
+    .navbar-light .dropdown>a::after{
+    right: 30px;
+    color: #fff;
+}
+.navbar-light .navbar-nav .dropdown .dropdown-menu .submenu {
+    width: 95%;
+    margin-left: 17px;
+}
+.offcanvas-header{ display:block; }
+  .navbar-collapse {
+    position: fixed;
+    top:0; 
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #808080;
+    z-index: 100;
+    transition: visibility .2s ease-in-out;
+  }
+  .navbar-collapse.show {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+  .navbar-light .nav-item .nav-link{
+    color: #fff;
+  }
+  .navbar-light .btn-close{
+    margin-right: 20px;
+  }
+    .banner h1 {
+    width: 100%;
+   }
+   .banner h2 {
+   width: 100%;
+   }
+   .pricing .card {
+    max-width: 60%;
+    margin: 0 auto 30px auto;
+}
+    }
+@media screen and (max-width: 768px){
+  .banner h1 {
+    font-size: 28px;
+    line-height: 36px;
+    width: 100%;
+}
+.banner h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+    }
+@media screen and (max-width: 767px){
+ .navbar-light .dropdown>a::after {
+    right: -60px;
+    color: #fff;
+}
+.pricing .card {
+    max-width: 100%;
+   }
+   .faq .card .card-header > a.collapsed:before, 
+   .faq .card .card-header > a:before {
+    right: -25px;
+   }
+    }
